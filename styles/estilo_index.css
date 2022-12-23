@@ -1,0 +1,115 @@
+/* Tipografias
+Titulos
+Poppins black y bold
+Cuerpo y txt
+poppins regular, italic y extraligth */
+
+/* ROOT */
+*{
+    font-family: 'Poppins', sans-serif;;
+}
+.f-black{
+    font-weight:900 ;
+}
+.f-ligth{
+    font-weight:200 ;
+}
+.f-reg{
+    font-weight:400;
+}
+.f-bold{
+    font-weight:700;
+}
+/* NAVBAR */
+.logo{
+    width: 300px;
+    height: auto;
+}
+nav{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px !important;
+    justify-content: center;
+    align-items:center ;
+}
+ul{
+    display: flex;
+}
+.font-nav{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.font-nav-bold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #fd8237;
+}
+a{
+    padding: 1em;
+    margin-right: 10px; 
+}
+
+/* SECCION1 */
+.section1{
+    background-image: url('../banner_principal.png');
+    color: white;
+    padding: 150px;
+}
+h1{
+    font-size: 60px;
+}
+/* SECCION2 */
+.section2{
+    background-color: white;
+    color: black;
+    padding: 100px;
+    padding-left: 150px; ;
+    padding-right: 150px;
+}
+.img-100{
+    width: 100% ;
+    height: auto ;
+    padding: 5px;
+}
+/* SECCION3 */
+.title{
+   text-align: center; 
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.txt{
+    text-align: justify;
+}
+
+/* CONTADOR */
+.contador{
+    font-size: 30px;
+}
+@keyframes aparecer{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.ocultar{
+    opacity: 0;
+}
+.animar{
+    animation: aparecer 3s ;
+    opacity: 1;
+}
+
+/* COLABORAR */
+.btn-colab{
+    background-color:#1d4731;
+    color:white;
+    font-size: larger;
+    padding: 20px;
+    border-radius: 30px;
+}
