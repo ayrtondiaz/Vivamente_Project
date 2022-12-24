@@ -113,3 +113,17 @@ h1{
     padding: 20px;
     border-radius: 30px;
 }
+
+footer {
+    background-color: #98cdbb;
+    color:white;
+}
+
+.icono_footer {
+    width: 5%;
+    min-width:50px;
+}
+
+.footer_text{
+    min-width:200px;
+}
