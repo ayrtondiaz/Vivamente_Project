@@ -129,7 +129,7 @@ footer {
 }
 /* SECCION4-PRODUCTOS */
 .productos{
-    background-image: url('../fondo-destacado.png');
+    background-image: url('../assets/img/inicio/fondo-destacado.png');
     /* background-color: #1d4731; */
 }
 .btn-quiero{
