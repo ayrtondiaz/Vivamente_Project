@@ -1,0 +1,60 @@
+
+/* ROOT */
+*{
+    font-family: 'Poppins', sans-serif;;
+}
+.f-black{
+    font-weight:900 ;
+}
+.f-ligth{
+    font-weight:200 ;
+}
+.f-reg{
+    font-weight:400;
+}
+.f-bold{
+    font-weight:700;
+}
+/* NAVBAR */
+.logo{
+    width: 300px;
+    height: auto;
+}
+nav{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px !important;
+    justify-content: center;
+    align-items:center ;
+}
+ul{
+    display: flex;
+}
+.font-nav{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.font-nav-bold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #fd8237;
+}
+a{
+    padding: 1em;
+    margin-right: 10px; 
+}
+
+/* FOOTER */
+footer {
+    background-color: #98cdbb;
+    color:white;
+}
+
+.icono_footer {
+    width: 5%;
+    min-width:50px;
+}
+
+.footer_text{
+    min-width:200px;
+}
