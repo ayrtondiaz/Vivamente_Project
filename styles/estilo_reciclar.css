@@ -1,0 +1,56 @@
+/* SECCION1 */
+.section1_reciclar{
+    display: block;
+    background-image: url('../assets/img/reciclar/Group\ 20.png');
+    color: white;
+    padding: 150px;
+    max-width:100%;
+    height: auto;
+    background-size: 100% 100%;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.div_reciclar{
+    padding: 0px 20px 0px 20px;
+    width:100%;
+}
+
+/*PC*/
+@media (min-width:900px) {
+    .div_reciclar{
+        padding: 0px 150px 0px 150px;
+        width:100%;
+    }
+}
+
+
+.yerba_reciclar {
+    border-radius: 50%;
+    border: 10px solid #98cdbb;
+    padding:0px;
+    max-width: 60%;
+}
+
+hr {
+    border: 0.75vmin solid #1D4731;
+    background-color: #1D4731;
+    opacity: 1;
+    margin: 0%;
+    width:84%;
+}
+
+.nros_reciclar {
+    padding-right: 10px;
+}
+
+.section3_reciclar {
+    background-image: url('../assets/img/reciclar/Puntos\ de\ recolección/Fondo.png');
+    height:100%;
+}
+
+.entrega_reciclar {
+    text-align: center;
+}
