@@ -12,6 +12,9 @@
 .f-reg{
     font-weight:400;
 }
+.f-inter{
+    font-weight: 500;
+}
 .f-bold{
     font-weight:700;
 }
@@ -57,4 +60,25 @@ footer {
 
 .footer_text{
     min-width:200px;
+}
+
+/* PROD-SERV */
+.margin{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.num{
+    font-size: 80px;
+}
+.box{
+    text-align: justify;
+    justify-content: space-around;
+}
+
+/* ICONOS */
+.icons{
+    text-align: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 20px;
 }
