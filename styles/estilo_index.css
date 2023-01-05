@@ -214,7 +214,7 @@ footer {
 .img-modal{
     border-radius: 20px;
     width: 90%;
-    height: 90%;
+    max-height: 500px;
 }
 .btn-category{
     display: flex;
@@ -275,7 +275,7 @@ footer {
     opacity: 0;
     pointer-events: none;
      transition: opacity .6s .9s;
-    --transform: translateY(-100vh);
+    --transform: translateY(+100vh);
     --transition: transform .8s; 
 }
 
@@ -285,6 +285,10 @@ footer {
     transition: opacity .6s;
     --transform: translateY(0);
     --transition: transform .8s .8s;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
 }
 /* 
 .modal__container{

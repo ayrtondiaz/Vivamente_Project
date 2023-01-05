@@ -82,3 +82,45 @@ footer {
     justify-content: space-evenly;
     margin: 20px;
 }
+
+/* PRODUCTOS */
+.contenedor-productos{
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    border-radius: 30px;
+
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 8px 8px 18px 1px rgba(142,140,140,0.26);
+    -moz-box-shadow: 8px 8px 18px 1px rgba(142,140,140,0.26);
+    -webkit-box-shadow: 8px 8px 18px 1px rgba(142,140,140,0.26);
+}
+
+.btn-quiero2{
+    background-color:#fd8237;
+    right: 100px;
+    left: 100px;
+    padding-left: 200px;
+    color:white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.img-card{
+    width: 300px;
+    height: 300px;
+}
+.bg-prod{
+    background-color: #d0f3e8;
+}
+.pad{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

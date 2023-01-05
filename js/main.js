@@ -97,7 +97,6 @@ contenedorProducto.innerHTML=
 
 
 
-
 // productosDestacados.forEach((prod) => {
 //     const { id, titulo, img} = prod;
 //     // console.log('anda')
