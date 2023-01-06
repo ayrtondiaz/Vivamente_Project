@@ -51,7 +51,7 @@ a{
 
 /* SECCION1 */
 .section1{
-    background-image: url('../assets/img/inicio/banner_principal.png');
+    background-image: url('../assets/img/inicio/banner_principal.webp');
     color: white;
     padding: 150px;
 }
@@ -129,7 +129,7 @@ footer {
 }
 /* SECCION4-PRODUCTOS */
 .productos{
-    background-image: url('../assets/img/inicio/fondo-destacado.png');
+    background-image: url('../assets/img/inicio/fondo-destacado.webp');
     /* background-color: #1d4731; */
 }
 

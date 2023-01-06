@@ -1,7 +1,7 @@
 /* SECCION1 */
 .section1_reciclar{
     display: block;
-    background-image: url('../assets/img/reciclar/Group\ 20.png');
+    background-image: url('../assets/img/reciclar/Group\ 20.webp');
     color: white;
     padding: 150px;
     max-width:100%;
@@ -47,7 +47,7 @@ hr {
 }
 
 .section3_reciclar {
-    background-image: url('../assets/img/reciclar/Puntos\ de\ recolección/Fondo.png');
+    background-image: url('../assets/img/reciclar/Puntos\ de\ recolección/Fondo.webp');
     height:100%;
 }
 

@@ -17,7 +17,7 @@ let productosDestacados=
         descripcion:'* Venta al por mayor a partir de 20 piezas.',
         precioMen:1500,
         precioMay:1500,
-        img:'../assets/img/productos/productos/etiqueta plantable.JPG'
+        img:'../assets/img/productos/productos/etiqueta plantable.webp'
 
     },
     {
@@ -27,7 +27,7 @@ let productosDestacados=
         descripcion:'* Vetna al por mayor a partir de 20 piezas.',
         precioMen:400,
         precioMay:300,
-        img:'../assets/img/productos/productos/vela en frasco.JPG'
+        img:'../assets/img/productos/productos/vela en frasco.webp'
 
     }
 ]

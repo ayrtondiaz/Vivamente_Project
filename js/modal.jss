@@ -2,7 +2,7 @@
 <section class="modal m2" >
 <div class="modal__container">
 <div class="col-lg-4">
-    <img src="assets/img/productos/productos/etiqueta plantable.JPG" class=" img-modal">
+    <img src="assets/img/productos/productos/etiqueta plantable.webp" class=" img-modal">
     <p>* Venta al por mayor a partir de 20 piezas</p>
     <p><b>Especifiaciones:</b></p>
     <p> <ul>

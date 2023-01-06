@@ -60,7 +60,7 @@ contenedorProducto.innerHTML=
 `
                 <div class="col-lg-4 lg-12">
                 <div class="card-des">
-                    <img src="../assets/img/productos/productos/maceta yerba.JPG" class="card-img " alt="..." id="img-prod">   
+                    <img src="../assets/img/productos/productos/maceta yerba.webp" class="card-img " alt="..." id="img-prod">   
                     <h2 class="card-txt" style="color: white" id="nombre-prod">Maceta de yerba</h2>
                     <br>
                 </div> 
@@ -70,7 +70,7 @@ contenedorProducto.innerHTML=
               </div> 
               <div class="col-lg-4 lg-12">
               <div class="card-des">
-              <img src="../assets/img/productos/productos/etiqueta plantable.JPG" class="card-img " alt="..." id="img-prod">   
+              <img src="../assets/img/productos/productos/etiqueta plantable.webp" class="card-img " alt="..." id="img-prod">   
               <h2 class="card-txt" style="color: white" id="nombre-prod">Etiqueta Plantable</h2>
               <br>
               </div> 
@@ -81,7 +81,7 @@ contenedorProducto.innerHTML=
 
               <div class="col-lg-4 lg-12">
               <div class="card-des">
-              <img src="../assets/img/productos/productos/vela en frasco.JPG" class="card-img " alt="..." id="img-prod">   
+              <img src="../assets/img/productos/productos/vela en frasco.webp" class="card-img " alt="..." id="img-prod">   
               <h2 class="card-txt" style="color: white" id="nombre-prod">Vela en frasco</h2>
               <br>
               </div> 

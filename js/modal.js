@@ -5,7 +5,7 @@ modal1.innerHTML +=
 <section class="modal m1" >
 <div class="modal__container">
 <div class="col-lg-4">
-    <img src="assets/img/productos/productos/maceta yerba.JPG" class=" img-modal">
+    <img src="assets/img/productos/productos/maceta yerba.webp" class=" img-modal">
     <p>* Venta al por mayor a partir de 20 piezas</p>
 </div>
 <div class="col-lg-5">
@@ -44,7 +44,7 @@ modal2.innerHTML +=
 <section class="modal m2" >
 <div class="modal__container">
     <div class="col-lg-4">
-        <img src="assets/img/productos/productos/etiqueta plantable.JPG" class=" img-modal">
+        <img src="assets/img/productos/productos/etiqueta plantable.webp" class=" img-modal">
         <p>* Venta al por mayor a partir de 20 piezas</p>
         <p><b>Especifiaciones:</b></p>
         <p> <ul class="lista">
