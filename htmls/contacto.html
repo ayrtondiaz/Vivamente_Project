@@ -58,7 +58,7 @@
         </section>
 
         <section class="escribinos">
-          <form action="validar.php" method="post" enctype="multipart/form"> 
+          <form action="https://formsubmit.co/diazstudio99@gmail.com" method="POST" enctype="multipart/form"> 
             <fieldset>
                 <legend class="f-bold" style="color: #fd8237;">Escribinos</legend>
 
@@ -68,7 +68,7 @@
                     <label for="inputData1">Nombre y Apellido</label>
                     <h6 style="color:#fd8237">*</h6>
                   </div>
-                    <input class="form-control form-control-sm">
+                    <input class="form-control form-control-sm" type="text" name="name">
                 </div>
 
                 <div class="form-group mx-sm-3 mx-lg-0 mb-2">
@@ -76,7 +76,7 @@
                     <label for="inputData2">Email</label>
                     <h6 style="color:#fd8237">*</h6>
                   </div>
-                  <input class="form-control form-control-sm">
+                  <input class="form-control form-control-sm" type="email" name="email">
                 </div>
 
                 <div class="form-group mx-sm-3 mx-lg-0 mb-2">
@@ -84,7 +84,7 @@
                     <label for="inputData3">Teléfono</label>
                     <h6 style="color:#fd8237">*</h6>
                   </div>
-                  <input class="form-control form-control-sm">
+                  <input class="form-control form-control-sm" type="number" name="number">
                 </div>
 
                 <div class="form-group mx-sm-3 mx-lg-0 mb-2">
@@ -101,7 +101,7 @@
                         <label for="inputData4">Mensaje</label>
                         <h6 style="color:#fd8237">*</h6>
                       </div>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" type="comments"></textarea>
                     </div>
                 </div>
 
@@ -110,8 +110,11 @@
             <br>
             
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn-contacto">Enviar</button>
+                <button type="submit" class="btn-contacto" >Enviar</button>
             </div>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5502/">
+            <input type="hidden" name="_captcha" value="false">
             <br>
         </form>
 

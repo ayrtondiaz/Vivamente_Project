@@ -105,9 +105,9 @@ h1{
     opacity: 1;
 }
 
-/* COLABORAR */
+/* fBORAR */
 .btn-colab{
-    background-color:#1d4731;
+    background-color:#83d4aa;
     color:white;
     font-size: larger;
     padding: 20px;
@@ -196,7 +196,61 @@ footer {
     height: auto;
 }
 /* MODAL */
+.modal_container-form{
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 3em 2.5em;
+    margin: auto;
+    width: 150%;
+    max-width: 600px;
+    max-height: 110%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+.btn-cerrar{
+    display: flex;
+    justify-content: start !important;
+}
+/* MODAL-CONTACTO */
 
+.section1_contacto{
+    background-image: url('../assets/img/contacto/Group\ 18.webp');
+    color: white;
+    padding: 100px;
+}
+
+.h1_contacto{
+    font-size: 40px;
+}
+
+.escribinos {
+    margin-left: 15%;
+    margin-right:15%;
+    padding-top: 50px;
+}
+
+.form-control {
+    background-color: rgb(239, 239, 239);
+    border: none;
+}
+
+.btn-contacto {
+    background-color:#fd8237;
+    color:white;
+    font-size: larger;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    border:none;
+}
+
+.opcional_contactos {
+    font-size:xx-small;
+    padding-left:0.5%;
+}
+/* MODAL-PROD */
 .modal__container{
     border-radius: 30px;
     display: flex;
@@ -278,7 +332,25 @@ footer {
     --transform: translateY(+100vh);
     --transition: transform .8s; 
 }
-
+.modal--close{
+    display:none;
+}
+.m4{
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #111111bd;
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+         transition: opacity .6s .9s;
+        --transform: translateY(+100vh);
+        --transition: transform .8s; 
+    
+}
  .modal--show{
     opacity: 1;
     pointer-events: unset;
@@ -322,22 +394,27 @@ footer {
 */
 .modal__close{
     text-decoration: none;
-    color: #fff;
-    background-color: #fd8237;
+    color: #F26250;
     padding: 1em 3em;
-    border: 1px solid ;
-    border-radius: 6px;
-    display: inline-block;
     font-weight: 300;
-    transition: background-color .3s;
 }
 
 .modal__close:hover{
-    color: #F26250;
-    background-color: #fff;
+    color: #000000;
+    font-weight: 500;
 } 
 
+.modal__close__form{
+    text-decoration: none;
+    color: #F26250;
+    padding: 1em 3em;
+    font-weight: 300;
+}
 
+.modal__close__form:hover{
+    color: #000000;
+    font-weight: 500;
+} 
 /* SECCION */
 .btn-part{
     
