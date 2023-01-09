@@ -22,9 +22,15 @@ poppins regular, italic y extraligth */
 }
 /* NAVBAR */
 .logo{
-    width: 300px;
+    max-width: 300px;
+    width:100%;
     height: auto;
 }
+
+.navbar-brand {
+    width:75%;
+}
+
 nav{
     background-color: white;
     font-family: 'Poppins', sans-serif;
