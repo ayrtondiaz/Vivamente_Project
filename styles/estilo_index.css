@@ -22,9 +22,15 @@ poppins regular, italic y extraligth */
 }
 /* NAVBAR */
 .logo{
-    width: 300px;
+    max-width: 300px;
+    width:100%;
     height: auto;
 }
+
+.navbar-brand {
+    width:75%;
+}
+
 nav{
     background-color: white;
     font-family: 'Poppins', sans-serif;
@@ -53,7 +59,8 @@ a{
 .section1{
     background-image: url('../assets/img/inicio/banner_principal.webp');
     color: white;
-    padding: 150px;
+    height: auto;
+    background-size: 100% 100%;
 }
 h1{
     font-size: 60px;
@@ -62,10 +69,16 @@ h1{
 .section2{
     background-color: white;
     color: black;
-    padding: 100px;
-    padding-left: 150px; ;
-    padding-right: 150px;
+    padding: 10%;
 }
+
+@media (min-width:1000px) {
+    .section2{
+        padding: 10%;
+        width:100%;
+    }
+}
+
 .img-100{
     width: 100% ;
     height: auto ;
@@ -172,6 +185,8 @@ footer {
         width: 110%;
         
     }
+
+    
     .card-des .card-img{
         border-radius: 30px;
         margin-bottom: 30px;

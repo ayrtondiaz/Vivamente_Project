@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
 const contenedorProducto = document.getElementById('contenedor-prod')
 
 contenedorProducto.innerHTML=
-`
-                <div class="col-lg-4 lg-12">
+`               <div class="d-flex flex-wrap justify-content-evenly">
+                <div class="col-lg-4 col-10">
                 <div class="card-des">
-                    <img src="../assets/img/productos/productos/maceta yerba.webp" class="card-img " alt="..." id="img-prod">   
+                    <img  src="../assets/img/productos/productos/maceta yerba.webp" class="card-img" alt="..." id="img-prod">   
                     <h2 class="card-txt" style="color: white" id="nombre-prod">Maceta de yerba</h2>
                     <br>
                 </div> 
@@ -69,7 +69,7 @@ contenedorProducto.innerHTML=
                     <br>
                     <br>
               </div> 
-              <div class="col-lg-4 lg-12">
+              <div class="col-lg-4 col-10">
               <div class="card-des">
               <img src="../assets/img/productos/productos/etiqueta plantable.webp" class="card-img " alt="..." id="img-prod">   
               <h2 class="card-txt" style="color: white" id="nombre-prod">Etiqueta Plantable</h2>
@@ -80,7 +80,7 @@ contenedorProducto.innerHTML=
               <br>
               </div> 
 
-              <div class="col-lg-4 lg-12">
+              <div class="col-lg-4 col-10">
               <div class="card-des">
               <img src="../assets/img/productos/productos/vela en frasco.webp" class="card-img " alt="..." id="img-prod">   
               <h2 class="card-txt" style="color: white" id="nombre-prod">Vela en frasco</h2>
@@ -91,9 +91,10 @@ contenedorProducto.innerHTML=
               <br>
 
               </div>
+              </div>
 
 
-// `
+`
 
 
 
