@@ -7,7 +7,8 @@ let productosDestacados=
         descripcion:'* Venta al por mayor a partir de 20 piezas.',
         precioMen:320,
         precioMay:230,
-        img:'../assets/img/productos/productos/maceta yerba.JPG'
+        img:'../assets/img/productos/productos/maceta yerba.webp',
+        categoria: ['Chico','Mediano','Grande','Extragrande']
 
     },
     {
@@ -17,7 +18,8 @@ let productosDestacados=
         descripcion:'* Venta al por mayor a partir de 20 piezas.',
         precioMen:1500,
         precioMay:1500,
-        img:'../assets/img/productos/productos/etiqueta plantable.webp'
+        img:'../assets/img/productos/productos/etiqueta plantable.webp',
+        categoria: ['Chico','Mediano','Grande','Extragrande']
 
     },
     {
@@ -27,7 +29,8 @@ let productosDestacados=
         descripcion:'* Vetna al por mayor a partir de 20 piezas.',
         precioMen:400,
         precioMay:300,
-        img:'../assets/img/productos/productos/vela en frasco.webp'
+        img:'../assets/img/productos/productos/vela en frasco.webp',
+        categoria: ['Chico','Mediano','Grande','Extragrande']
 
     }
 ]

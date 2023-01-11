@@ -46,6 +46,7 @@ addEventListener('DOMContentLoaded', ()=>{
 // Productos
 
 let carrito = []
+let counter=0;
 
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('carrito')){

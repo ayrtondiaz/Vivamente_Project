@@ -268,7 +268,7 @@ footer {
 .img-modal{
     border-radius: 20px;
     width: 90%;
-    max-height: 500px;
+    max-height: 400px;
 }
 .btn-category{
     display: flex;
