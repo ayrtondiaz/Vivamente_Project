@@ -94,7 +94,7 @@ modal3.innerHTML +=
     <section class="modal m3" >
     <div class="modal__container">
     <div class="col-lg-4">
-        <img src="assets/img/productos/productos/maceta yerba.JPG" class=" img-modal">
+        <img src="assets/img/productos/productos/maceta yerba.webp" class=" img-modal">
         <p>* Venta al por mayor a partir de 20 piezas</p>
     </div>
     <div class="col-lg-5">

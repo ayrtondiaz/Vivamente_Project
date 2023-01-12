@@ -219,18 +219,13 @@ footer {
     justify-content: center;
     background-color: white;
     color: black;
-    padding: 3em 2.5em;
     margin: auto;
     width: 150%;
     max-width: 600px;
-    max-height: 110%;
     transform: var(--transform);
     transition:var(--transition);
 }
-.btn-cerrar{
-    display: flex;
-    justify-content: start !important;
-}
+
 /* MODAL-CONTACTO */
 
 .section1_contacto{
@@ -419,7 +414,6 @@ footer {
 .modal__close__form{
     text-decoration: none;
     color: #F26250;
-    padding: 1em 3em;
     font-weight: 300;
 }
 

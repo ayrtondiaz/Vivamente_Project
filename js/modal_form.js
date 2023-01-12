@@ -2,7 +2,7 @@ const modalContainer = document.getElementById('modal-form')
 modalContainer.innerHTML=`
 <section class="modal m4" >
 <div class="modal_container-form row text-center">
-  <div class="col-lg-9">
+  <div class="col-10">
   <section class="escribinos">
     <form action="https://formsubmit.co/xxxx@gmail.com" method="POST" enctype="multipart/form"> 
       <fieldset>
@@ -66,8 +66,8 @@ modalContainer.innerHTML=`
 
   </section>
   </div>
-  <div class="col-lg-1 btn-cerrar">
-    <a href="#" class="modal__close__form">Cerrar</a>
+  <div class="col-1 btn-cerrar pt-3">
+    <a href="#" class="modal__close__form"><b>X</b></a>
   </div>
 </div>     
 </section>

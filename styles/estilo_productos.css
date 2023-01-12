@@ -86,7 +86,6 @@ footer {
     text-align: center;
     justify-content: center;
     justify-content: space-evenly;
-    margin: 20px;
 }
 
 /* PRODUCTOS */
@@ -120,8 +119,7 @@ footer {
     transition: 0.5s;
 }
 .img-card{
-    width: 300px;
-    height: 300px;
+    width:80%;
 }
 .bg-prod{
     background-color: #d0f3e8;

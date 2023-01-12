@@ -1,41 +1,52 @@
-
-
-let counter2 = 9;
+let counter2 = 0;
+let tamaño2 = undefined;
 const nombreProd2="Porta Sahumerios"
 const contenedorModal2= document.getElementById('contenedor-modal2')
 contenedorModal2.innerHTML=`
 <section class="modal m2" >
 <div class="modal__container">
-<div class="col-lg-4">
-    <img src="../assets/img/productos/productos/porta sahumerio.webp" class=" img-modal">
-    <p>* Venta al por mayor a partir de 20 piezas</p>
+<div class="col-lg-4 pl-lg-5 p-lg-4 justify-content-center">
+    <img src="../assets/img/productos/productos/porta sahumerio.webp" class="d-none d-lg-flex col-12 img-modal">
+    <p class="d-none d-lg-flex">* Venta al por mayor a partir de 20 piezas</p>
 </div>
-<div class="col-lg-5">
-<h2 class="f-reg">Porta Sahumerio</h2>
-<p>Portasahumerios realizado con yerba mate reciclada. Su diseño alargado permite que las cenizas queden sobre el objeto</p>
-<div class="text-center"> 
-    <div class="may-men">
-    <h2 class="f-reg">Menor <b>$350</b></h2>
-    <h2 class="f-reg">Mayor <b>$250</b></h2>
+<div class="p-3 col-12 col-lg-8 d-flex flex-wrap justify-content-center align-items-center">
+<div class="d-flex flex-row col-12">
+    <h2 class="f-reg align-self-center col-10 col-sm-11 p-sm-3 p-lg-0">Porta Sahumerio</h2>
+    <a href="#" class="modal__close mc2 justify-self-end col-2 col-sm-1"><b class="align-self-center">Cerrar</b></a>
+</div>
+<p class="p-sm-3 p-lg-0" align="justify">Portasahumerios realizado con yerba mate reciclada. Su diseño alargado permite que las cenizas queden sobre el objeto</p>
+<img src="../assets/img/productos/productos/porta sahumerio.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
+<div class="col-11 d-flex d-lg-none justify-content-center">
+<p class="col-12 col-sm-6">* Venta al por mayor a partir de 20 piezas</p>
+</div>
+<div class="btn-category pb-2 p-0 col-11 d-flex flex-wrap justify-content-evenly">
+    <button class="btn btn-light col-5 m-1" onclick="ChangeSize2('chico')">Chico</button>
+    <button class="btn btn-light col-5 m-1" onclick="ChangeSize2('mediano')">Mediano</button>
+    <button class="btn btn-light col-5 m-1" onclick="ChangeSize2('grande')">Grande</button>
+    <button class="btn btn-light col-5 m-1" onclick="ChangeSize2('extragrande')">Extragrande</button>
+</div>
+<div class="text-center col-11"> 
+    <div class="may-men p-0 p-lg-2 d-flex justify-content-evenly">
+    <h2 class="f-reg">Menor <b>$320</b></h2>
+    <h2 class="f-reg">Mayor <b>$230</b></h2>
     </div>
-    <div class="mas-men">
-    <button class="btn btn-modal" onclick="Substract()">-</button>
+    <div class="mas-men p-1 p-lg-2">
+    <button class="btn btn-modal" onclick="Substract2()">-</button>
     <button class="btn btn-modal-l" id="num2">${counter2}</button>
-    <button class="btn btn-modal" onclick="Add()">+</button>
+    <button class="btn btn-modal" onclick="Add2()">+</button>
     </div>
-    <button class="btn btn-quiero2" onclick="Wpp()"> Quiero Comprar</button>
+    <button class="btn btn-quiero2" onclick="Wpp2()"> Quiero Comprar</button>
 </div>
 </div>
-<a href="#" class="modal__close mc2">Cerrar Modal</a>
 </div>
 </section>
 `
-{}
+
 
 const openModal2 = document.getElementById('openModal2');
 const modal2 = document.querySelector('.m2');
 const closeModal2 = document.querySelector('.mc2');
-const num2= document.getElementById("num2")
+num2= document.getElementById("num2")
 
 openModal2.addEventListener('click', (e)=>{
     console.log('funcionas')
@@ -49,12 +60,17 @@ closeModal2.addEventListener('click', (e)=>{
     modal2.classList.remove('modal--show');
 });
 
-function Add(){
+function ChangeSize2(size) {
+    tamaño2 = size;
+    console.log(tamaño2);
+}
+
+function Add2(){
     counter2++;
     num2.innerHTML=`${counter2}`
-    console.log(counter2)
 }
-function Substract(){
+
+function Substract2(){
     if (counter2 >  0 ){
 
         counter2--;
@@ -67,10 +83,11 @@ function Substract(){
 
 // WHATSAPP
 
-function Wpp(){
-    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter2}%20unidades%20de%20${nombreProd2} `;
+function Wpp2(){
+    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter2}%20unidades%20de%20${nombreProd2}%20de%20tamaño%20${tamaño2}`;
     window.open(URL, "_blank");
 }
 
 
 // > y <
+

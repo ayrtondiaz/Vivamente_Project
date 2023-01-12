@@ -24,7 +24,7 @@ contenedorModal5.innerHTML=`
     </div>
     <div class="mas-men">
     <button class="btn btn-modal" onclick="Substract()">-</button>
-    <button class="btn btn-modal-l" id="num5">${counter}</button>
+    <button class="btn btn-modal-l" id="num5">${counter5}</button>
     <button class="btn btn-modal" onclick="Add()">+</button>
     </div>
     <button class="btn btn-quiero2" onclick="Wpp()"> Quiero Comprar</button>
@@ -55,7 +55,7 @@ closeModal5.addEventListener('click', (e)=>{
 function Add(){
     counter5++;
     num5.innerHTML=`${counter5}`
-    console.log(counter)
+    console.log(counter);
 }
 function Substract(){
     if (counter5 >  0 ){
