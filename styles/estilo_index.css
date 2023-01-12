@@ -176,6 +176,7 @@ footer {
     border-radius: 20px;
     
 }
+
 .card-des{
     transition: all 0.5s;
     width: 90%;
@@ -199,7 +200,8 @@ footer {
         transition: all 0.5s;
         width: 110%;
         height: auto;
-        }
+    }
+
     .card-des .card-txt:hover{
         font-size: 35px;
         transition: all 1s;
@@ -272,32 +274,26 @@ footer {
     justify-content: center;
     background-color: #1d4731;
     color: white;
-    padding: 3em 2.5em;
     margin: auto;
     width: 150%;
-    max-width: 1500px;
-    max-height: 90%;
+    max-width: 95%;
     transform: var(--transform);
     transition:var(--transition);
 }
 .img-modal{
     border-radius: 20px;
-    width: 90%;
-    max-height: 400px;
+    height: auto;
+    min-width:200px;
 }
 .btn-category{
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
 }
 .may-men{
     display: flex;
     justify-content: space-evenly;
-    padding: 30px;
 }
-.mas-men{
-    padding: 30px;
-}
+
 .btn-modal{
     background-color:#98cdbb;
     border-radius: 15px;
@@ -410,7 +406,8 @@ footer {
 .modal__close{
     text-decoration: none;
     color: #F26250;
-    padding: 1em 3em;
+    padding:0px;
+    margin:0px;
     font-weight: 300;
 }
 
