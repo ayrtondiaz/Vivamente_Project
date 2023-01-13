@@ -19,16 +19,11 @@ contenedorModal2.innerHTML=`
 <div class="col-11 d-flex d-lg-none justify-content-center">
 <p class="col-12 col-sm-6">* Venta al por mayor a partir de 20 piezas</p>
 </div>
-<div class="btn-category pb-2 p-0 col-11 d-flex flex-wrap justify-content-evenly">
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize2('chico')">Chico</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize2('mediano')">Mediano</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize2('grande')">Grande</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize2('extragrande')">Extragrande</button>
-</div>
+
 <div class="text-center col-11"> 
     <div class="may-men p-0 p-lg-2 d-flex justify-content-evenly">
-    <h2 class="f-reg">Menor <b>$320</b></h2>
-    <h2 class="f-reg">Mayor <b>$230</b></h2>
+    <h2 class="f-reg">Menor <b>$ 350</b></h2>
+    <h2 class="f-reg">Mayor <b>$ 250</b></h2>
     </div>
     <div class="mas-men p-1 p-lg-2">
     <button class="btn btn-modal" onclick="Substract2()">-</button>
@@ -84,7 +79,7 @@ function Substract2(){
 // WHATSAPP
 
 function Wpp2(){
-    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter2}%20unidades%20de%20${nombreProd2}%20de%20tamaño%20${tamaño2}`;
+    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter2}%20unidades%20de%20${nombreProd2}`;
     window.open(URL, "_blank");
 }
 

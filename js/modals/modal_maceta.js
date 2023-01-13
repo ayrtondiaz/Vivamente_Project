@@ -1,6 +1,8 @@
 
 let counter1=0;
 let tamaño1=undefined;
+let valorMenor1 = "$ - "
+let valorMayor1 = "$ - "
 const nombreProd1="Maceta de Yerba"
 const contenedorModal= document.getElementById('contenedor-modal1')
 contenedorModal.innerHTML=`
@@ -28,12 +30,12 @@ contenedorModal.innerHTML=`
 </div>
 <div class="text-center col-11"> 
     <div class="may-men p-0 p-lg-2 d-flex justify-content-evenly">
-    <h2 class="f-reg">Menor <b>$320</b></h2>
-    <h2 class="f-reg">Mayor <b>$230</b></h2>
+        <h2 class="f-reg">Menor <b id="valMen1">${valorMenor1}</b></h2>
+        <h2 class="f-reg">Mayor <b id="valMay1">${valorMayor1}</b></h2>
     </div>
     <div class="mas-men p-1 p-lg-2">
     <button class="btn btn-modal" onclick="Substract1()">-</button>
-    <button class="btn btn-modal-l" id="num">${counter1}</button>
+    <button class="btn btn-modal-l" id="num1">${counter1}</button>
     <button class="btn btn-modal" onclick="Add1()">+</button>
     </div>
     <button class="btn btn-quiero2" onclick="Wpp1()"> Quiero Comprar</button>
@@ -47,7 +49,9 @@ contenedorModal.innerHTML=`
 const openModal1 = document.getElementById('openModal1');
 const modal1 = document.querySelector('.modal');
 const closeModal1 = document.querySelector('.modal__close');
-const num1= document.getElementById("num")
+const num1= document.getElementById("num1")
+let valMen1= document.getElementById("valMen1")
+let valMay1= document.getElementById("valMay1")
 
 openModal1.addEventListener('click', (e)=>{
     console.log('funcionas')
@@ -63,7 +67,36 @@ closeModal1.addEventListener('click', (e)=>{
 
 function ChangeSize1(size) {
     tamaño1 = size;
-    console.log(tamaño1);
+
+    switch (size) {
+        case 'chico':
+            valorMenor1 = "$250";
+            valorMayor1 = "$190";
+            valMay1.innerHTML = `${valorMayor1}`;
+            valMen1.innerHTML = `${valorMenor1}`;
+             break;
+
+        case 'mediano':
+            valorMenor1 = "$380";
+            valorMayor1 = "$270";
+            valMay1.innerHTML = `${valorMayor1}`;
+            valMen1.innerHTML = `${valorMenor1}`;
+            break;
+
+        case 'grande':
+            valorMenor1 = "$620";
+            valorMayor1 = "$430";
+            valMay1.innerHTML = `${valorMayor1}`;
+            valMen1.innerHTML = `${valorMenor1}`;
+            break;
+
+        case 'extragrande':
+            valorMenor1 = "$1200";
+            valorMayor1 = "$840";
+            valMay1.innerHTML = `${valorMayor1}`;
+            valMen1.innerHTML = `${valorMenor1}`;
+            break;
+    }
 }
 
 function Add1(){
