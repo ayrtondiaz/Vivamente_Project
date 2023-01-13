@@ -36,7 +36,11 @@ contenedorModal3.innerHTML=`
         <h2 class="f-reg">Menor <b id="valMen3">${valorMenor3}</b></h2>
         <h2 class="f-reg">Mayor <b id="valMay3">${valorMayor3}</b></h2>
     </div>
+<<<<<<< HEAD
     <div class="mas-men p-1 p-lg-2">
+=======
+    <div class="mas-men">
+>>>>>>> 32295d7 (modal de productos sin correciones)
     <button class="btn btn-modal" onclick="Substract3()">-</button>
     <button class="btn btn-modal-l" id="num3">${counter3}</button>
     <button class="btn btn-modal" onclick="Add3()">+</button>
@@ -69,6 +73,7 @@ closeModal3.addEventListener('click', (e)=>{
     modal3.classList.remove('modal--show');
 });
 
+<<<<<<< HEAD
 
 
 function ChangeSize3(size) {
@@ -82,11 +87,16 @@ function ChangeSize3(size) {
           document.getElementById('mediano3').classList.remove('pressedButton');}
 }
 
+=======
+>>>>>>> 32295d7 (modal de productos sin correciones)
 function Add3(){
     counter3++;
     num3.innerHTML=`${counter3}`
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 32295d7 (modal de productos sin correciones)
 function Substract3(){
     if (counter3 >  0 ){
 

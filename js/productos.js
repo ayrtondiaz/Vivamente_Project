@@ -54,7 +54,7 @@ contenedorProd.innerHTML=
     <img src="../assets/img/productos/productos/lápiz plantable.webp" class="border img-card" alt="">
     <h4 class="f-bold p-3">Lapiz plantable</h4>
     <div class="col-lg-12 justify-content-center">
-      <button class="btn btn-quiero2">Lo quiero</button>
+      <button class="btn btn-quiero2" id="openModal6">Lo quiero</button>
     </div>
   </div>
 </div>
@@ -63,7 +63,7 @@ contenedorProd.innerHTML=
     <img src="../assets/img/productos/productos/etiqueta plantable.webp" class="border img-card" alt="">
     <h4 class="f-bold p-3">Etiquetas Plantables</h4>
     <div class="col-lg-12 justify-content-center">
-      <button class="btn btn-quiero2">Lo quiero</button>
+      <button class="btn btn-quiero2" id="openModal7">Lo quiero</button>
     </div>
   </div>
 </div>
@@ -72,7 +72,7 @@ contenedorProd.innerHTML=
     <img src="../assets/img/productos/productos/vela en frasco.webp" class="border img-card" alt="">
     <h4 class="f-bold p-3">Vela en frasco</h4>
     <div class="col-lg-12 justify-content-center">
-      <button class="btn btn-quiero2">Lo quiero</button>
+      <button class="btn btn-quiero2" id="openModal8">Lo quiero</button>
     </div>
   </div>
 </div>
@@ -81,7 +81,7 @@ contenedorProd.innerHTML=
     <img src="../assets/img/productos/productos/Organizador deco.webp" class="border img-card" alt="">
     <h4 class="f-bold p-3">Organizador deco</h4>
     <div class="col-lg-12 justify-content-center">
-      <button class="btn btn-quiero2">Lo quiero</button>
+      <button class="btn btn-quiero2" id="openModal9">Lo quiero</button>
     </div>
   </div>
 </div>
@@ -90,7 +90,7 @@ contenedorProd.innerHTML=
     <img src="../assets/img/productos/productos/Scrunchie.webp" class="border img-card" alt="">
     <h4 class="f-bold p-3">Scrunchies</h4>
     <div class="col-lg-12 justify-content-center">
-      <button class="btn btn-quiero2">Lo quiero</button>
+      <button class="btn btn-quiero2" id="openModal10">Lo quiero</button>
     </div>
   </div>
 </div>           
@@ -99,7 +99,7 @@ contenedorProd.innerHTML=
     <img src="../assets/img/productos/productos/bolsas.webp" class="border img-card" alt="">
     <h4 class="f-bold p-3">Bolsas de compra</h4>
     <div class="col-lg-12 justify-content-center">
-      <button class="btn btn-quiero2">Lo quiero</button>
+      <button class="btn btn-quiero2" id="openModal11">Lo quiero</button>
     </div>
   </div>
 </div>

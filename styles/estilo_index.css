@@ -55,6 +55,8 @@ a{
     margin-right: 10px; 
 }
 
+
+
 /* SECCION1 */
 .section1{
     background-image: url('../assets/img/inicio/banner_principal.webp');
@@ -299,7 +301,9 @@ footer {
     border-radius: 15px;
     border: 0ch;
 }
-
+.des-min{
+    font-size: 10px;
+}
 
 .btn-quiero2{
     background-color:#fd8237;

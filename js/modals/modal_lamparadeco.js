@@ -39,7 +39,11 @@ contenedorModal4.innerHTML=`
         <h2 class="f-reg">Menor <b id="valMen4">${valorMenor4}</b></h2>
         <h2 class="f-reg">Mayor <b id="valMay4">${valorMayor4}</b></h2>
     </div>
+<<<<<<< HEAD
     <div class="mas-men p-1 p-lg-2">
+=======
+    <div class="mas-men">
+>>>>>>> 32295d7 (modal de productos sin correciones)
     <button class="btn btn-modal" onclick="Substract4()">-</button>
     <button class="btn btn-modal-l" id="num4">${counter4}</button>
     <button class="btn btn-modal" onclick="Add4()">+</button>
@@ -76,7 +80,10 @@ function Add4(){
     num4.innerHTML=`${counter4}`
     console.log(counter4)
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 32295d7 (modal de productos sin correciones)
 function Substract4(){
     if (counter4 >  0 ){
 

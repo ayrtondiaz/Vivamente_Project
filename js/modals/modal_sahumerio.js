@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 let counter2 = 0;
 let tamaño2 = undefined;
+=======
+
+
+let counter2 = 0;
+>>>>>>> 32295d7 (modal de productos sin correciones)
 const nombreProd2="Porta Sahumerios"
 const contenedorModal2= document.getElementById('contenedor-modal2')
 contenedorModal2.innerHTML=`
@@ -25,7 +31,11 @@ contenedorModal2.innerHTML=`
     <h2 class="f-reg">Menor <b>$ 350</b></h2>
     <h2 class="f-reg">Mayor <b>$ 250</b></h2>
     </div>
+<<<<<<< HEAD
     <div class="mas-men p-1 p-lg-2">
+=======
+    <div class="mas-men">
+>>>>>>> 32295d7 (modal de productos sin correciones)
     <button class="btn btn-modal" onclick="Substract2()">-</button>
     <button class="btn btn-modal-l" id="num2">${counter2}</button>
     <button class="btn btn-modal" onclick="Add2()">+</button>
@@ -58,16 +68,22 @@ closeModal2.addEventListener('click', (e)=>{
     modal2.classList.remove('modal--show');
 });
 
+<<<<<<< HEAD
 function ChangeSize2(size) {
     tamaño2 = size;
     console.log(tamaño2);
 }
 
+=======
+>>>>>>> 32295d7 (modal de productos sin correciones)
 function Add2(){
     counter2++;
     num2.innerHTML=`${counter2}`
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 32295d7 (modal de productos sin correciones)
 function Substract2(){
     if (counter2 >  0 ){
 
