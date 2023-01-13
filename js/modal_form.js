@@ -1,6 +1,6 @@
 const modalContainer = document.getElementById('modal-form')
 modalContainer.innerHTML=`
-<section class="modal m4" >
+<section class="modal4 m4" >
 <div class="modal_container-form row text-center">
   <div class="col-10">
   <section class="escribinos">

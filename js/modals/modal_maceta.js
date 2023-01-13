@@ -23,10 +23,10 @@ contenedorModal.innerHTML=`
 <p class="col-12 col-sm-6">* Venta al por mayor a partir de 20 piezas</p>
 </div>
 <div class="btn-category pb-2 p-0 col-11 d-flex flex-wrap justify-content-evenly">
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize1('chico')">Chico</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize1('mediano')">Mediano</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize1('grande')">Grande</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize1('extragrande')">Extragrande</button>
+    <button class="btn btn-light col-5 m-1" id="chico1" onclick="ChangeSize1('chico')">Chico</button>
+    <button class="btn btn-light col-5 m-1" id="mediano1" onclick="ChangeSize1('mediano')">Mediano</button>
+    <button class="btn btn-light col-5 m-1" id="grande1" onclick="ChangeSize1('grande')">Grande</button>
+    <button class="btn btn-light col-5 m-1" id="extragrande1"onclick="ChangeSize1('extragrande')">Extragrande</button>
 </div>
 <div class="text-center col-11"> 
     <div class="may-men p-0 p-lg-2 d-flex justify-content-evenly">
@@ -37,6 +37,9 @@ contenedorModal.innerHTML=`
     <button class="btn btn-modal" onclick="Substract1()">-</button>
     <button class="btn btn-modal-l" id="num1">${counter1}</button>
     <button class="btn btn-modal" onclick="Add1()">+</button>
+    </div>
+    <div id="error1" class="d-none justify-content-center col-12">
+        <h4  class="col-12" style="color:red"><b>datos invalidos o incompletos</b></h3>
     </div>
     <button class="btn btn-quiero2" onclick="Wpp1()"> Quiero Comprar</button>
 </div>
@@ -74,13 +77,21 @@ function ChangeSize1(size) {
             valorMayor1 = "$190";
             valMay1.innerHTML = `${valorMayor1}`;
             valMen1.innerHTML = `${valorMenor1}`;
-             break;
+            document.getElementById('chico1').classList.add('pressedButton');
+            document.getElementById('mediano1').classList.remove('pressedButton');
+            document.getElementById('grande1').classList.remove('pressedButton');
+            document.getElementById('extragrande1').classList.remove('pressedButton');
+            break;
 
         case 'mediano':
             valorMenor1 = "$380";
             valorMayor1 = "$270";
             valMay1.innerHTML = `${valorMayor1}`;
             valMen1.innerHTML = `${valorMenor1}`;
+            document.getElementById('chico1').classList.remove('pressedButton');
+            document.getElementById('mediano1').classList.add('pressedButton');
+            document.getElementById('grande1').classList.remove('pressedButton');
+            document.getElementById('extragrande1').classList.remove('pressedButton');
             break;
 
         case 'grande':
@@ -88,6 +99,10 @@ function ChangeSize1(size) {
             valorMayor1 = "$430";
             valMay1.innerHTML = `${valorMayor1}`;
             valMen1.innerHTML = `${valorMenor1}`;
+            document.getElementById('chico1').classList.remove('pressedButton');
+            document.getElementById('mediano1').classList.remove('pressedButton');
+            document.getElementById('grande1').classList.add('pressedButton');
+            document.getElementById('extragrande1').classList.remove('pressedButton');
             break;
 
         case 'extragrande':
@@ -95,6 +110,10 @@ function ChangeSize1(size) {
             valorMayor1 = "$840";
             valMay1.innerHTML = `${valorMayor1}`;
             valMen1.innerHTML = `${valorMenor1}`;
+            document.getElementById('chico1').classList.remove('pressedButton');
+            document.getElementById('mediano1').classList.remove('pressedButton');
+            document.getElementById('grande1').classList.remove('pressedButton');
+            document.getElementById('extragrande1').classList.add('pressedButton');
             break;
     }
 }
@@ -117,6 +136,12 @@ function Substract1(){
 // WHATSAPP
 
 function Wpp1(){
-    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter1}%20unidades%20de%20${nombreProd1}%20de%20tamaño%20${tamaño1}`;
-    window.open(URL, "_blank");
-}1
+    if(counter1 !== 0 && tamaño1 !== undefined){
+        const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter1}%20unidades%20de%20${nombreProd1}%20de%20tamaño%20${tamaño1}`;
+        window.open(URL, "_blank");
+        document.getElementById('error1').classList.add("d-none");
+        document.getElementById('error1').classList.remove("d-flex"); 
+    } else { document.getElementById('error1').classList.remove("d-none");
+             document.getElementById('error1').classList.add("d-flex"); 
+}
+}

@@ -1,10 +1,9 @@
 let counter3 = 0;
-let type3 = undefined;
 let tamaño3 = undefined;
 let foco3 = undefined;
 let valorMenor3 = "$ - "
 let valorMayor3 = "$ - "
-const nombreProd3="Lampara de Sal"
+const nombreProd3="lampara de sal";
 const contenedorModal3= document.getElementById('contenedor-modal3')
 
 contenedorModal3.innerHTML=`
@@ -24,19 +23,13 @@ contenedorModal3.innerHTML=`
 <div class="col-11 d-flex d-lg-none justify-content-center">
 <p class="col-12 col-sm-6">* Venta al por mayor a partir de 20 piezas</p>
 </div>
+
 <div class="btn-category pb-2 p-0 col-11 d-flex flex-wrap justify-content-evenly">
-    <button class="btn btn-light col-5 m-1" onclick="ChangeType3('sal'), getPrice3()">Lampara de sal</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeType3('deco'), getPrice3()">Lampara decorativa</button>
-</div>
-<div class="btn-category pb-2 p-0 col-11 d-flex flex-wrap justify-content-evenly">
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize3('mediano'), getPrice3()">Mediano</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeSize3('grande'), getPrice3()">Grande</button>
+    <button class="btn btn-light col-5 m-1" id="mediano3" onclick="ChangeSize3('mediano'), getPrice3()">Mediano</button>
+    <button class="btn btn-light col-5 m-1" id="grande3" onclick="ChangeSize3('grande'), getPrice3()">Grande</button>
 </div>
 
-<div id="focos" class="btn-category pb-2 p-0 col-11 d-none flex-wrap justify-content-evenly">
-    <button class="btn btn-light col-5 m-1" onclick="ChangeFoco3('LED'), getPrice3()">Foco LED</button>
-    <button class="btn btn-light col-5 m-1" onclick="ChangeFoco3('deco'), getPrice3()">Foco Deco</button>
-</div>
+
 
 <div class="text-center col-11"> 
     <div class="may-men p-0 p-lg-2 d-flex justify-content-evenly">
@@ -47,6 +40,9 @@ contenedorModal3.innerHTML=`
     <button class="btn btn-modal" onclick="Substract3()">-</button>
     <button class="btn btn-modal-l" id="num3">${counter3}</button>
     <button class="btn btn-modal" onclick="Add3()">+</button>
+    </div>
+    <div id="error3" class="d-none justify-content-center col-12">
+        <h4  class="col-12" style="color:red"><b>datos invalidos o incompletos</b></h3>
     </div>
     <button class="btn btn-quiero2" onclick="Wpp3()"> Quiero Comprar</button>
 </div>
@@ -73,27 +69,17 @@ closeModal3.addEventListener('click', (e)=>{
     modal3.classList.remove('modal--show');
 });
 
-function ChangeFoco3(foco) {
-    foco3 = foco;
-}
 
-function ChangeType3(type) {
-    type3 = type;
-
-    if(type === 'deco') {
-        document.getElementById("focos").classList.remove('d-none');
-        document.getElementById("focos").classList.add('d-flex');
-        console.log("d-none eliminado")
-    }
-    else {
-        document.getElementById("focos").classList.add('d-none');
-        document.getElementById("focos").classList.add('d-flex');
-        foco3 = undefined;
-    }
-}
 
 function ChangeSize3(size) {
     tamaño3 = size;
+    
+    if(tamaño3==='mediano') {
+        document.getElementById('mediano3').classList.add('pressedButton');
+        document.getElementById('grande3').classList.remove('pressedButton');
+    }
+    else {document.getElementById('grande3').classList.add('pressedButton');
+          document.getElementById('mediano3').classList.remove('pressedButton');}
 }
 
 function Add3(){
@@ -113,52 +99,21 @@ function Substract3(){
 }
 
 function getPrice3() {
-    console.log(type3)
-    console.log(tamaño3)
-    console.log(foco3)
     
     switch (true) {
-        case (type3 === 'sal' && tamaño3 === 'mediano' && foco3 === undefined):
+        case (tamaño3 === 'mediano'):
             valorMenor3 = "$2200";
             valorMayor3 = "$1500";
             valMay3.innerHTML = `${valorMayor3}`;
             valMen3.innerHTML = `${valorMenor3}`;
             break;
 
-        case (type3 === 'sal' && tamaño3 === 'grande' && foco3 === undefined):
+        case (tamaño3 === 'grande'):
             valorMenor3 = "$2800";
             valorMayor3 = "$1900";
             valMay3.innerHTML = `${valorMayor3}`;
             valMen3.innerHTML = `${valorMenor3}`;
             break;
-
-            case (type3 === 'deco' && tamaño3 === 'mediano' && foco3 === 'LED'):
-                valorMenor3 = "$2200";
-                valorMayor3 = "$900";
-                valMay3.innerHTML = `${valorMayor3}`;
-                valMen3.innerHTML = `${valorMenor3}`;
-                break;
-
-            case (type3 === 'deco' && tamaño3 === 'mediano' && foco3 === 'deco'):
-                valorMenor3 = "$2800";
-                valorMayor3 = "$1900";
-                valMay3.innerHTML = `${valorMayor3}`;
-                valMen3.innerHTML = `${valorMenor3}`;
-                break;
-
-            case (type3 === 'deco' && tamaño3 === 'grande' && foco3 === 'LED'):
-                valorMenor3 = "$2800";
-                valorMayor3 = "$1900";
-                valMay3.innerHTML = `${valorMayor3}`;
-                valMen3.innerHTML = `${valorMenor3}`;
-                break;
-
-            case (type3 === 'deco' && tamaño3 === 'grande' && foco3 === 'deco'):
-                valorMenor3 = "$2800";
-                valorMayor3 = "$1900";
-                valMay3.innerHTML = `${valorMayor3}`;
-                valMen3.innerHTML = `${valorMenor3}`;
-                break;
         
         default:
             valorMenor1 = "$ -";
@@ -173,14 +128,14 @@ function getPrice3() {
 // WHATSAPP
 
 function Wpp3(){
-    if(foco3===undefined) {
+    if(tamaño3 !== undefined && counter3 !== 0) {
         const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter3}%20unidades%20de%20${nombreProd3}%20de%20tamaño%20${tamaño3}`;
         window.open(URL, "_blank");
-    }
-    else {
-        const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter3}%20unidades%20de%20${nombreProd3}%20de%20tamaño%20${tamaño3}%20y%20con%20foco%20${foco3}`;
-        window.open(URL, "_blank");
-    }
+        document.getElementById('error3').classList.add("d-none");
+        document.getElementById('error3').classList.remove("d-flex"); 
+    } else { document.getElementById('error3').classList.remove("d-none");
+             document.getElementById('error3').classList.add("d-flex"); 
+            }
 }
 
 // > y <

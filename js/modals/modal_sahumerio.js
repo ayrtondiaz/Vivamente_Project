@@ -30,6 +30,9 @@ contenedorModal2.innerHTML=`
     <button class="btn btn-modal-l" id="num2">${counter2}</button>
     <button class="btn btn-modal" onclick="Add2()">+</button>
     </div>
+    <div id="error2" class="d-none justify-content-center col-12">
+        <h4  class="col-12" style="color:red"><b>cantidad invalida</b></h3>
+    </div>
     <button class="btn btn-quiero2" onclick="Wpp2()"> Quiero Comprar</button>
 </div>
 </div>
@@ -79,8 +82,14 @@ function Substract2(){
 // WHATSAPP
 
 function Wpp2(){
-    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter2}%20unidades%20de%20${nombreProd2}`;
-    window.open(URL, "_blank");
+    if(counter2 !== 0) {
+        const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter2}%20unidades%20de%20${nombreProd2}`;
+        window.open(URL, "_blank");
+        document.getElementById('error2').classList.add("d-none");
+        document.getElementById('error2').classList.remove("d-flex"); 
+    } else { document.getElementById('error2').classList.remove("d-none");
+             document.getElementById('error2').classList.add("d-flex"); 
+            }
 }
 
 

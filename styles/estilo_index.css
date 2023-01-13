@@ -408,7 +408,6 @@ footer {
 
 .modal__close:hover{
     color: #000000;
-    font-weight: 500;
 } 
 
 .modal__close__form{
@@ -474,4 +473,9 @@ footer {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
     }
+}
+
+.pressedButton {
+    background-color: gray;
+    font-weight: bold;
 }

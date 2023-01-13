@@ -16,7 +16,7 @@ contenedorProd.innerHTML=
 <div class="col-lg-4">
   <div class="card border text-center">
     <img src="../assets/img/productos/productos/porta sahumerio.webp" class="border img-card" alt="">
-    <h4 class="f-bold p-3">Porta Sahumario</h4>
+    <h4 class="f-bold p-3">Porta Sahumerio</h4>
     <div class="col-lg-12 justify-content-center">
       <button class="btn btn-quiero2" id="openModal2">Lo quiero</button>
     </div>
