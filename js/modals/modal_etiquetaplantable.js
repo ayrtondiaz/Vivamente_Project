@@ -1,43 +1,55 @@
 
-let counter7 = 0;
+let valor7 = " $ - "
+let type7 = undefined;
+let quantity7 = undefined;
+
 const nombreProd7="Etiqueta plantable"
 const contenedorModal7= document.getElementById('contenedor-modal7')
 contenedorModal7.innerHTML=`
 <section class="modal m7" >
 <div class="modal__container">
-<div class="col-lg-4">
-    <img src="../assets/img/productos/productos/etiqueta plantable.webp" class=" img-modal">
-    <p>* Venta al por mayor a partir de 20 piezas</p>
-    <br>
-    <h5 class="des-min"><b>Especificaciones</b></h5>
-    <h6 class="des-min"><li>Se puede elegir el color de acuerdo al stock.</li></h6>
-    <h6 class="des-min"><li>Las semillas del papel son de Albahaca.</li></h6>
-    <h6 class="des-min"><li>El costo es por frente únicamente, ambos lados c/cotización personalizada.</li></h6>
+<div class="col-lg-4 pl-lg-5 p-lg-4 d-none d-lg-flex flex-wrap">
+    <img src="../assets/img/productos/productos/etiqueta plantable.webp" class="col-12 img-modal justify-self-center">
+    <p class="col-12">* Venta al por mayor a partir de 20 piezas</p>
+    <p class="col-12"><b>Especificaciones</b></p>
+    <p class="col-12"><li>Se puede elegir el color de acuerdo al stock.</li></p>
+    <p class="col-12"><li>Las semillas del papel son de Albahaca.</li></p>
+    <p class="col-12"><li>El costo es por frente únicamente, ambos lados c/cotización personalizada.</li></p>
 </div>
-<div class="col-lg-5">
-<h2 class="f-reg">${nombreProd7}</h2>
-<p>Papel reciclado con semillas, 100%artesanal. Variedad de colores y especies</p>
-<div class="btn-category">
-    <button class="btn btn-light">C/marca o logo</button>
-    <button class="btn btn-light">C/frase personalizada</button>
+<div class="p-3 col-12 col-lg-8 d-flex flex-wrap justify-content-center align-items-center">
+<div class="d-flex flex-row col-12">
+    <h2 class="f-reg align-self-center col-10 col-sm-11 p-sm-3 p-lg-0">${nombreProd7}</h2>
+    <a href="#" class="modal__close justify-self-end col-2 col-sm-1 mc7"><b class="align-self-center">Cerrar</b></a>
 </div>
-<div class="btn-category">
-    <button class="btn btn-light">50 un</button>
-    <button class="btn btn-light">100 un</button>
+<p class="p-sm-3 p-lg-0" align="justify">Papel reciclado con semillas, 100% artesanal. Variedad de colores y especies</p>
+<img src="../assets/img/productos/productos/etiqueta plantable.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
+<div class="col-11 d-flex flex-wrap d-lg-none pb-4">
+    <p class="col-12">* Venta al por mayor a partir de 20 piezas</p>
+    <p class="col-12"><b>Especificaciones</b></p>
+    <p class="col-12"><li>Se puede elegir el color de acuerdo al stock.</li></p>
+    <p class="col-12"><li>Las semillas del papel son de Albahaca.</li></p>
+    <p class="col-12"><li>El costo es por frente únicamente, ambos lados c/cotización personalizada.</li></h6>
 </div>
-<div class="text-center"> 
-    <div class="may-men">
-    <h2 class="f-reg"><b>$1500</b></h2>
+<div class="btn-category pb-2 p-0 col-11 d-flex flex-wrap justify-content-evenly">
+    <button class="btn btn-light col-5 m-1" id="logo" onclick="ChangeType7('logo'), getPrice7()">C/marca o logo</button>
+    <button class="btn btn-light col-5 m-1" id="frase" onclick="ChangeType7('frase personalizada'), getPrice7()">C/frase personalizada</button>
+</div>
+
+<div class="btn-category pb-2 p-0 col-11 d-flex flex-wrap justify-content-evenly">
+    <button class="btn btn-light col-5 m-1" id="50" onclick="ChangeQuantity7('50'), getPrice7()">50 unidades</button>
+    <button class="btn btn-light col-5 m-1" id="100" onclick="ChangeQuantity7('100'), getPrice7()">100 unidades</button>
+</div>
+<div class="text-center col-11"> 
+    <div class="may-men p-0 p-lg-2 d-flex justify-content-evenly">
+        <h2 class="f-reg p-3">Valor: <b id="val7">${valor7}</b></h2>
     </div>
-    <div class="mas-men">
-    <button class="btn btn-modal" onclick="Substract7()">-</button>
-    <button class="btn btn-modal-l" id="num7">${counter7}</button>
-    <button class="btn btn-modal" onclick="Add7()">+</button>
+
+    <div id="error7" class="d-none justify-content-center col-12">
+        <h4  class="col-12" style="color:red"><b>datos invalidos o incompletos</b></h3>
     </div>
     <button class="btn btn-quiero2" onclick="Wpp7()"> Quiero Comprar</button>
 </div>
 </div>
-<a href="#" class="modal__close mc7">Cerrar Modal</a>
 </div>
 </section>
 `
@@ -58,28 +70,71 @@ closeModal7.addEventListener('click', (e)=>{
     modal7.classList.remove('modal--show');
 });
 
-function Add7(){
-    counter7++;
-    num7.innerHTML=`${counter7}`
-    console.log(counter7)
-}
-function Substract7(){
-    if (counter7 >  0 ){
+function ChangeType7(type){
+    type7 = type;
 
-        counter7--;
-        num7.innerHTML=`${counter7}`
+    if(type7 === 'logo') {
+        document.getElementById('logo').classList.add('pressedButton');
+        document.getElementById('frase').classList.remove('pressedButton');
+        }
+        else {document.getElementById('frase').classList.add('pressedButton');
+              document.getElementById('logo').classList.remove('pressedButton');
+            }
+}
+
+function ChangeQuantity7(quantity){
+    quantity7 = quantity;
+
+    if(quantity === '50') {
+        document.getElementById('50').classList.add('pressedButton');
+        document.getElementById('100').classList.remove('pressedButton');
+        }
+        else {document.getElementById('100').classList.add('pressedButton');
+              document.getElementById('50').classList.remove('pressedButton');
+            }
+}
+
+function getPrice7() {
+    switch (true) {
+        case (quantity7 === '50' && type7 === 'logo'):
+            valor7 = "$2200";
+            val7.innerHTML = `${valor7}`;
+            break;
+
+        case (quantity7 === '100' && type7 === 'logo'):
+            valor7 = "$3900";
+            val7.innerHTML = `${valor7}`;
+            break;
+
+            case (quantity7 === '50' && type7 === 'frase personalizada'):
+                valor7 = "$4900";
+                val7.innerHTML = `${valor7}`;
+                break;
+    
+            case (quantity7 === '100' && type7 === 'frase personalizada'):
+                valor7 = "$9000";
+                val7.innerHTML = `${valor7}`;
+                break;
+        
+            default:
+                valor7 = "$ - ";
+                val7.innerHTML = `${valor7}`;
+                break;
     }
-    else{
-        counter7=0;
-    }
+
 }
 
 // WHATSAPP
 
 function Wpp7(){
-    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter7}%20unidades%20de%20${nombreProd7} `;
+    if(type7 !== undefined && quantity7 !== undefined) {
+    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${quantity7}%20unidades%20de%20${nombreProd7}%20con%20${type7} `;
     window.open(URL, "_blank");
+    document.getElementById('error7').classList.add("d-none");
+    document.getElementById('error7').classList.remove("d-flex"); 
+    } else { document.getElementById('error7').classList.remove("d-none");
+             document.getElementById('error7').classList.add("d-flex"); 
+    }
 }
-
 
 // > y <

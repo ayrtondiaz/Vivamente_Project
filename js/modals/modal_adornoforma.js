@@ -31,15 +31,9 @@ contenedorModal5.innerHTML=`
         <h2 class="f-reg">Menor <b>$ 100</b></h2>
         <h2 class="f-reg">Mayor <b>$ 70</b></h2>
     </div>
-<<<<<<< HEAD
     <div class="mas-men p-1 p-lg-2">
     <button class="btn btn-modal" onclick="Substract5()">-</button>
     <button class="btn btn-modal-l" id="num5">${counter5}</button>
-=======
-    <div class="mas-men">
-    <button class="btn btn-modal" onclick="Substract5()">-</button>
-    <button class="btn btn-modal-l" id="num5">${counter}</button>
->>>>>>> 32295d7 (modal de productos sin correciones)
     <button class="btn btn-modal" onclick="Add5()">+</button>
     </div>
     <div id="error5" class="d-none justify-content-center col-12">
@@ -56,7 +50,6 @@ openModal5 = document.getElementById('openModal5');
 modal5 = document.querySelector('.m5');
 closeModal5 = document.querySelector('.mc5');
 num5= document.getElementById("num5")
-console.log(openModal5)
 openModal5.addEventListener('click', (e)=>{
     console.log('funcionas')
     e.preventDefault();
@@ -69,7 +62,6 @@ closeModal5.addEventListener('click', (e)=>{
     modal5.classList.remove('modal--show');
 });
 
-<<<<<<< HEAD
 function ChangeForm5(form) {
     forma5 = form;
     console.log(form)
@@ -98,12 +90,7 @@ function ChangeForm5(form) {
 function Add5(){
     counter5++;
     num5.innerHTML=`${counter5}`
-=======
-function Add5(){
-    counter5++;
-    num5.innerHTML=`${counter5}`
     console.log(counter5)
->>>>>>> 32295d7 (modal de productos sin correciones)
 }
 function Substract5(){
     if (counter5 >  0 ){
@@ -118,7 +105,6 @@ function Substract5(){
 
 // WHATSAPP
 
-<<<<<<< HEAD
 function Wpp5(){
     if(counter5 !== 0 && forma5 !== undefined) {
         const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter5}%20unidades%20de%20${nombreProd5}%20de%20${forma5} `;
@@ -128,11 +114,6 @@ function Wpp5(){
     } else { document.getElementById('error5').classList.remove("d-none");
              document.getElementById('error5').classList.add("d-flex"); 
             }
-=======
-function Wpp(){
-    const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter5}%20unidades%20de%20${nombreProd5} `;
-    window.open(URL, "_blank");
->>>>>>> 32295d7 (modal de productos sin correciones)
 }
 
 

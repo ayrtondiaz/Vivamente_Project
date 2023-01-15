@@ -10,7 +10,7 @@ contenedorModal4.innerHTML=`
 <section class="modal m4" >
 <div class="modal__container">
 <div class="col-lg-4 pl-lg-5 p-lg-4 justify-content-center">
-    <img src="../assets/img/productos/productos/adorno.webp" class="d-none d-lg-flex col-12 img-modal">
+    <img src="../assets/img/productos/productos/lámpara decorativa.webp" class="d-none d-lg-flex col-12 img-modal">
     <p class="d-none d-lg-flex">* Venta al por mayor a partir de 20 piezas</p>
 </div>
 <div class="p-3 col-12 col-lg-8 d-flex flex-wrap justify-content-center align-items-center">
@@ -19,7 +19,7 @@ contenedorModal4.innerHTML=`
     <a href="#" class="modal__close mc4 justify-self-end col-2 col-sm-1"><b class="align-self-center">Cerrar</b></a>
 </div>
 <p class="p-sm-3 p-lg-0" align="justify">Lámparas de yerba mate reciclada,ideales para ambientar tu espacio favorito de recreaciòn o estudio.</p>
-<img src="../assets/img/productos/productos/adorno.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
+<img src="../assets/img/productos/productos/lámpara decorativa.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
 <p class="col-12 col-sm-6">* Venta al por mayor a partir de 20 piezas</p>
 </div>
@@ -39,11 +39,7 @@ contenedorModal4.innerHTML=`
         <h2 class="f-reg">Menor <b id="valMen4">${valorMenor4}</b></h2>
         <h2 class="f-reg">Mayor <b id="valMay4">${valorMayor4}</b></h2>
     </div>
-<<<<<<< HEAD
     <div class="mas-men p-1 p-lg-2">
-=======
-    <div class="mas-men">
->>>>>>> 32295d7 (modal de productos sin correciones)
     <button class="btn btn-modal" onclick="Substract4()">-</button>
     <button class="btn btn-modal-l" id="num4">${counter4}</button>
     <button class="btn btn-modal" onclick="Add4()">+</button>
@@ -80,10 +76,7 @@ function Add4(){
     num4.innerHTML=`${counter4}`
     console.log(counter4)
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 32295d7 (modal de productos sin correciones)
 function Substract4(){
     if (counter4 >  0 ){
 
@@ -117,9 +110,9 @@ function ChangeFoco4(foco) {
 }
 
 function getPrice4() {
-    console.log(tamaño4 + foco4);
     switch (true) {
         case (tamaño4 === 'mediano' && foco4 === 'LED'):
+            console.log(tamaño4 + foco4);
             valorMenor4 = "$2200";
             valorMayor4 = "$900";
             valMay4.innerHTML = `${valorMayor4}`;
@@ -134,24 +127,24 @@ function getPrice4() {
             break;
 
         case (tamaño4 === 'mediano' && foco4 === 'deco'):
+            valorMenor4 = "$2800";
+            valorMayor4 = "$1900";
+            valMay4.innerHTML = `${valorMayor4}`;
+            valMen4.innerHTML = `${valorMenor4}`;
+            break;
+        
+        case (tamaño4 === 'grande' && foco4 === 'deco'):
             valorMenor4 = "$3500";
             valorMayor4 = "$2500";
             valMay4.innerHTML = `${valorMayor4}`;
             valMen4.innerHTML = `${valorMenor4}`;
             break;
         
-        case (tamaño4 === 'grande' && foco4 === 'deco'):
-            valorMenor4 = "$2800";
-            valorMayor4 = "$3500";
+        default:
+            valorMenor4 = "$ -";
+            valorMayor4 = "$ - ";
             valMay4.innerHTML = `${valorMayor4}`;
             valMen4.innerHTML = `${valorMenor4}`;
-            break;
-        
-        default:
-            valorMenor1 = "$ -";
-            valorMayor1 = "$ - ";
-            valMay1.innerHTML = `${valorMayor1}`;
-            valMen1.innerHTML = `${valorMenor1}`;
             break;
     }
 
