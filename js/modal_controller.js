@@ -1,28 +1,30 @@
-const openModal = document.getElementById('abrirModal');
-const modal = document.querySelector('.m1');
-const closeModal = document.querySelector('.modal__close');
+const openModalA = document.getElementById('abrirModalA');
+const modalA = document.querySelector('.mA');
+const closeModalA = document.querySelector('.mcA');
 
-openModal.addEventListener('click', (e)=>{
+openModalA.addEventListener('click', (e)=>{
     console.log('funcionas')
     e.preventDefault();
-    modal.classList.add('modal--show');
+    modalA.classList.add('modal--show');
 });
 
-closeModal.addEventListener('click', (e)=>{
+closeModalA.addEventListener('click', (e)=>{
     e.preventDefault();
-    modal.classList.remove('modal--show');
+    modalA.classList.remove('modal--show');
 });
 
 
-const openModal2 = document.getElementById('abrirModal2');
-// const modal2 = document.getElementById('A');
-// const modal2 = document.querySelector('.m2');
-const closeModal2 = document.querySelector('.modal__close2');
+const openModalB = document.getElementById('abrirModalB');
+const modalB = document.querySelector('.mB');
+const closeModalB = document.querySelector('.mcB');
 
-openModal2.addEventListener('click', (e)=>{
+openModalB.addEventListener('click', (e)=>{
     console.log('funcionas')
     e.preventDefault();
-    modal.classList.add('modal--show');
+    modalB.classList.add('modal--show');
 });
 
-
+closeModalB.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalB.classList.remove('modal--show');
+});

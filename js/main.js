@@ -45,15 +45,8 @@ addEventListener('DOMContentLoaded', ()=>{
 })
 // Productos
 
-let carrito = []
 let counter=0;
 
-document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('carrito')){
-        carrito = JSON.parse(localStorage.getItem('carrito'))
-        actualizarCarrito()
-    }
-})
 
 const contenedorProducto = document.getElementById('contenedor-prod')
 
@@ -61,89 +54,69 @@ contenedorProducto.innerHTML=
 `               <div class="d-flex flex-wrap justify-content-evenly">
                 <div class="col-lg-4 col-10">
                 <div class="card-des">
-                    <img  src="../assets/img/productos/productos/maceta yerba.webp" class="card-img" alt="..." id="img-prod">   
+                <div class="pos">
+                <button type="button" class="btn btn-fav f-reg" id="" >
+                <span class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                </span> Favorito </button>
+                <img  src="../assets/img/inicio/maceta.webp" class="card-img" alt="..." id="img-prod">   
+                </div>
                     <h2 class="card-txt" style="color: white" id="nombre-prod">Maceta de yerba</h2>
                     <br>
                 </div> 
-                    <button type="button" class="btn btn-quiero f-reg" id="abrirModal" > Lo quiero </button>
+                <button type="button" class="btn btn-quiero f-reg" id="openModal1" > Lo quiero </button>
                     <br>
                     <br>
-              </div> 
-              <div class="col-lg-4 col-10">
-              <div class="card-des">
-              <img src="../assets/img/productos/productos/etiqueta plantable.webp" class="card-img " alt="..." id="img-prod">   
-              <h2 class="card-txt" style="color: white" id="nombre-prod">Etiqueta Plantable</h2>
-              <br>
-              </div> 
-              <button type="button" class="btn btn-quiero f-reg" id="abrirModal2" > Lo quiero </button>
-              <br>
-              <br>
-              </div> 
+                </div>
+                
+                
 
-              <div class="col-lg-4 col-10">
-              <div class="card-des">
-              <img src="../assets/img/productos/productos/vela en frasco.webp" class="card-img " alt="..." id="img-prod">   
-              <h2 class="card-txt" style="color: white" id="nombre-prod">Vela en frasco</h2>
-              <br>
-              </div> 
-              <button type="button" class="btn btn-quiero f-reg" id="abrirModal3" > Lo quiero </button>
-              <br>
-              <br>
 
-              </div>
+
+                <div class="col-lg-4 col-10">
+                <div class="card-des">
+                <div class="pos">
+                <button type="button" class="btn btn-fav f-reg" id="" >
+                <span class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                </span> Favorito </button>
+                <img  src="../assets/img/inicio/etiqueta.webp" class="card-img" alt="..." id="img-prod">   
+                </div>
+                    <h2 class="card-txt" style="color: white" id="nombre-prod">Etiqueta Plantable</h2>
+                    <br>
+                </div> 
+                <button type="button" class="btn btn-quiero f-reg" id="openModal7" > Lo quiero </button>
+                    <br>
+                    <br>
+                </div> 
+                
+                <div class="col-lg-4 col-10">
+                <div class="card-des">
+                <div class="pos">
+                <button type="button" class="btn btn-fav f-reg" id="" >
+                <span class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                </span> Favorito </button>
+                <img  src="../assets/img/inicio/vela.webp" class="card-img" alt="..." id="img-prod">   
+                </div>
+                    <h2 class="card-txt" style="color: white" id="nombre-prod">Vela en frasco</h2>
+                    <br>
+                </div> 
+                <button type="button" class="btn btn-quiero f-reg" id="openModal8" > Lo quiero </button>
+                    <br>
+                    <br>
+                </div> 
+
+              
               </div>
 
 
 `
 
-
-
-
-// productosDestacados.forEach((prod) => {
-//     const { id, titulo, img} = prod;
-//     // console.log('anda')
-//     // const div = document.createElement('div')
-//     // div.classList.add('producto')
-//     contenedorProducto.innerHTML +=    
-//     `
-//     <div>
-//     <div class="col-lg-11 lg-12">
-//     <div class="card-des">
-//         <img src="${img}" class="card-img w-100" alt="..." id="img-prod">   
-//         <h2 class="card-txt" style="color: white" id="nombre-prod">${titulo}</h2>
-//         <br>
-//     </div> 
-//         <button type="button" class="btn btn-quiero f-reg" id="abrirModal" > Lo quiero </button>
-//         <br>
-//         <br>
-//     </div> 
-
-    
-//     `;
-
-//     //2 - SEGUNDO PASO, LUEGO DE QUE INSERTEMOS EL HTML EN EL DOM:
-//      const boton = document.getElementById(`abrirModal`)
-//     //Por cada elemento de mi array, creo un div, lo cuelgo, le pongo un id particular, una vez colgado
-//     //le hago un get element by id (el de agregar) Obtengo el elemento y a dicho elemento le agregamos
-//     //el add event listener
-
-//     boton.addEventListener('click', () => {
-//         //esta funcion ejecuta el agregar el carrito con la id del producto
-//         const openModal = document.getElementById('abrirModal');
-//         const modal = document.querySelector('modal');
-//         const closeModal = document.querySelector('.modal__close');
-
-//         openModal.addEventListener('click', (e)=>{
-//         console.log('funcionas')
-//         e.preventDefault();
-//         modal.classList.add('modal--show');
-//         });
-
-//         closeModal.addEventListener('click', (e)=>{
-//         e.preventDefault();
-//         modal.classList.remove('modal--show');
-//         });
-        
-//     })
-// })
 

@@ -4,7 +4,7 @@ modalContainer.innerHTML=`
 <div class="modal_container-form row text-center">
   <div class="col-10">
   <section class="escribinos">
-    <form action="https://formsubmit.co/xxxx@gmail.com" method="POST" enctype="multipart/form"> 
+    <form action="https://formsubmit.co/diazstudio99@gmail.com" method="POST" enctype="multipart/form"> 
       <fieldset>
           <legend class="f-bold" style="color: #1d4731;">Quiero participar</legend>
 
@@ -56,9 +56,9 @@ modalContainer.innerHTML=`
       <br>
       
       <div class="d-flex justify-content-center">
-          <button type="submit" class="btn-contacto" >Enviar</button>
+          <button type="submit" class="btn-contacto" id="abrirModalExito">Enviar</button>          
+        <div class="modal-form-exito" id="modal-form-exito"></div>
       </div>
-
       <input type="hidden" name="_next" value="http://127.0.0.1:5502/">
       <input type="hidden" name="_captcha" value="false">
       <br>
@@ -66,8 +66,12 @@ modalContainer.innerHTML=`
 
   </section>
   </div>
-  <div class="col-1 btn-cerrar pt-3">
-    <a href="#" class="modal__close__form"><b>X</b></a>
+  <div class=" btn-cerrar ">
+    <a href="#" class="modal__close__form"><b>
+    <span style="color:black"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+  </svg></span>
+    </b></a>
   </div>
 </div>     
 </section>

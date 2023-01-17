@@ -9,16 +9,20 @@ contenedorModal.innerHTML=`
 <section class="modal m1" >
 <div class="modal__container">
 <div class="col-lg-4 pl-lg-5 p-lg-4 justify-content-center">
-    <img src="../assets/img/productos/productos/maceta yerba.webp" class="d-none d-lg-flex col-12 img-modal">
+    <img src="../assets/img/productos/productos/maceta.webp" class="d-none d-lg-flex col-12 img-modal">
     <p class="d-none d-lg-flex">* Venta al por mayor a partir de 20 piezas</p>
 </div>
 <div class="p-3 col-12 col-lg-8 d-flex flex-wrap justify-content-center align-items-center">
 <div class="d-flex flex-row col-12">
     <h2 class="f-reg align-self-center col-10 col-sm-11 p-sm-3 p-lg-0">Maceta de Yerba</h2>
-    <a href="#" class="modal__close justify-self-end col-2 col-sm-1"><b class="align-self-center">Cerrar</b></a>
+    <a href="#" class="modal__close justify-self-end col-2 col-sm-1"><b class="align-self-center">
+    <span style="color:white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+  </svg></span>
+    </b></a>
 </div>
 <p class="p-sm-3 p-lg-0" align="justify">Macetas de yerba reciclada, ecologias y biodegradables. Ideales para utilizar tanto en el interior com en el exterior</p>
-<img src="../assets/img/productos/productos/maceta yerba.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
+<img src="../assets/img/productos/productos/maceta.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
 <p class="col-12 col-sm-6">* Venta al por mayor a partir de 20 piezas</p>
 </div>

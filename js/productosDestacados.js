@@ -7,12 +7,9 @@ let productosDestacados=
         descripcion:'* Venta al por mayor a partir de 20 piezas.',
         precioMen:320,
         precioMay:230,
-<<<<<<< HEAD
         img:'../assets/img/productos/productos/maceta yerba.webp',
-        categoria: ['Chico','Mediano','Grande','Extragrande']
-=======
+        categoria: ['Chico','Mediano','Grande','Extragrande'],
         img:'../assets/img/productos/productos/maceta yerba.webp'
->>>>>>> 655be51b92742f1ab920ad1d5bafd573c90ef67b
 
     },
     {
