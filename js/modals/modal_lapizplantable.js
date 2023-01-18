@@ -12,9 +12,9 @@ contenedorModal6.innerHTML=`
     <img src="../assets/img/productos/productos/lapiz.webp" class="d-none d-lg-flex col-12 img-modal">
     <p class="d-none d-lg-flex">* Venta al por mayor a partir de 20 piezas</p>
     <p class=" d-none d-lg-flex"><b>Personaliza tus lápices:</b></p>
-    <p class="des-min d-none d-lg-flex"><li>Forrado $170 (Se deben solicitar con 7 dias de anticipación)</li></p>
-    <p class="des-min d-none d-lg-flex"><li>Grabado $190 (Se deben solicitar con 15 dias de anticipación)</li></p>
-    <p class="des-min d-none d-lg-flex"><li>Con blisters/señalador $250 (Se deben solicitar con 7 dias de anticipación)</li></p>
+    <p class="des-min d-none d-lg-flex">Forrado $170 (Se deben solicitar con 7 dias de anticipación)</p>
+    <p class="des-min d-none d-lg-flex">Grabado $190 (Se deben solicitar con 15 dias de anticipación)</p>
+    <p class="des-min d-none d-lg-flex">Con blisters/señalador $250 (Se deben solicitar con 7 dias de anticipación)</p>
 </div>
 <div class="p-3 col-12 col-lg-8 d-flex flex-wrap justify-content-center align-items-center">
 <div class="d-flex flex-row col-12">
@@ -29,10 +29,10 @@ contenedorModal6.innerHTML=`
 <img src="../assets/img/productos/productos/lapiz.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex flex-wrap d-lg-none justify-content-center">
     <p class="col-12">* Venta al por mayor a partir de 20 piezas</p>
-    <h5 class="des-min col-12"><b>Personaliza tus lápices:</b></h5>
-    <h6 class="des-min col-12"><li>Forrado $170 (Se deben solicitar con 7 dias de anticipación)</li></h6>
-    <h6 class="des-min col-12"><li>Grabado $190 (Se deben solicitar con 15 dias de anticipación)</li></h6>
-    <h6 class="des-min col-12"><li>Con blisters/señalador $250 (Se deben solicitar con 7 dias de anticipación)</li></h6>
+    <h5 class="col-12"><b>Personaliza tus lápices:</b></h5>
+    <h6 class="col-12">Forrado $170 (Se deben solicitar con 7 dias de anticipación)</h6>
+    <h6 class="col-12">Grabado $190 (Se deben solicitar con 15 dias de anticipación)</h6>
+    <h6 class="col-12">Con blisters/señalador $250 (Se deben solicitar con 7 dias de anticipación)</h6>
 </div>
 <div class="btn-category pb-2 p-0 col-11 d-flex flex-wrap justify-content-evenly">
     <button class="btn btn-light col-5 m-1" id="madera6" onclick="ChangeType6('madera natural')">Madera natural</button>

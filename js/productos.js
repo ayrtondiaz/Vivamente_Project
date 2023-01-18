@@ -43,7 +43,7 @@ contenedorProd.innerHTML=
 <div class="col-lg-4">
   <div class="card border text-center">
     <img src="../assets/img/productos/productos/lampara.webp" class="border img-card" alt="">
-    <h4 class="f-bold p-3">Lámpara decorativa</h4>
+    <h4 class="f-bold py-3">Lámpara decorativa</h4>
     <div class="col-lg-12 justify-content-center">
       <button class="btn btn-quiero2" id="openModal4">Lo quiero</button>
     </div>
@@ -61,7 +61,7 @@ contenedorProd.innerHTML=
 <div class="col-lg-4">
   <div class="card border text-center">
     <img src="../assets/img/productos/productos/etiqueta.webp" class="border img-card" alt="">
-    <h4 class="f-bold p-3">Etiquetas Plantables</h4>
+    <h4 class="f-bold py-3">Etiquetas Plantables</h4>
     <div class="col-lg-12 justify-content-center">
       <button class="btn btn-quiero2" id="openModal7">Lo quiero</button>
     </div>
@@ -87,7 +87,7 @@ contenedorProd.innerHTML=
 </div>
 <div class="col-lg-4">
   <div class="card border text-center">
-    <img src="../assets/img/productos/productos/scrunchie.webp" class="border img-card" alt="">
+    <img src="../assets/img/productos/productos/Scrunchie.webp" class="border img-card" alt="">
     <h4 class="f-bold p-3">Scrunchies</h4>
     <div class="col-lg-12 justify-content-center">
       <button class="btn btn-quiero2" id="openModal10">Lo quiero</button>
