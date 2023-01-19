@@ -125,4 +125,17 @@ footer {
     padding-bottom: 100px;
 }
 
-/* MODAL */
+.btn-carrusel{
+    background-color: white;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    color: #1d4731;
+    position: absolute;
+    z-index: 9999;
+    margin-left: 255px;
+    margin-bottom: 135px;
+}

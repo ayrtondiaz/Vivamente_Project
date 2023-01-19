@@ -37,6 +37,10 @@ const openFormE = document.getElementById('abrirModalExito');
 const modalFormE= document.querySelector('.me');
 const closeFormE = document.querySelector('.modal__close__e');
 
+// function Confirmacion(){
+//   modalFormE.classList.add('modal--show');
+// }
+
 openFormE.addEventListener('click', (e)=>{
     console.log('funcionas')
     e.preventDefault();
@@ -48,3 +52,5 @@ closeFormE.addEventListener('click', (e)=>{
     console.log('cerrar')
     modalFormE.classList.remove('modal--show');
 });
+
+

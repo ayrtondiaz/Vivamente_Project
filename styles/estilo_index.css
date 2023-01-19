@@ -555,3 +555,19 @@ footer {
     font-weight: bold;
 }
 
+.me{
+    background-color: #1d4731;
+}
+.men{
+    margin-top: 200px;
+}
+.btn-regresar{
+    background-color: white;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    color: #1d4731;
+}

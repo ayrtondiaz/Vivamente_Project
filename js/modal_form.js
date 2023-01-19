@@ -4,7 +4,7 @@ modalContainer.innerHTML=`
 <div class="modal_container-form row text-center">
   <div class="col-10">
   <section class="escribinos">
-    <form action="https://formsubmit.co/diazstudio99@gmail.com" method="POST" enctype="multipart/form"> 
+    <form action="https://formsubmit.co/diazstudio99@gmail.com" method="POST" enctype="multipart/form" id="form"> 
       <fieldset>
           <legend class="f-bold" style="color: #1d4731;">Quiero participar</legend>
 
@@ -56,10 +56,9 @@ modalContainer.innerHTML=`
       <br>
       
       <div class="d-flex justify-content-center">
-          <button type="submit" class="btn-contacto" id="abrirModalExito">Enviar</button>          
-        <div class="modal-form-exito" id="modal-form-exito"></div>
+          <button type="submit" class="btn-contacto" onclick="hizoClick()" >Enviar</button>       
       </div>
-      <input type="hidden" name="_next" value="http://127.0.0.1:5502/">
+
       <input type="hidden" name="_captcha" value="false">
       <br>
   </form>
@@ -97,3 +96,4 @@ closeForm.addEventListener('click', (e)=>{
     console.log('cerrar')
     modalForm.classList.remove('modal--show');
 });
+
