@@ -4,7 +4,7 @@ modalContainer.innerHTML=`
 <div class="modal_container-form row text-center">
   <div class="col-10">
   <section class="escribinos">
-    <form action="https://formsubmit.co/diazstudio99@gmail.com" method="POST" enctype="multipart/form" id="form"> 
+    <form action="https://formsubmit.co/xxxx@gmail.com" method="POST" enctype="multipart/form" id="form"> 
       <fieldset>
           <legend class="f-bold" style="color: #1d4731;">Quiero participar</legend>
 
