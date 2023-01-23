@@ -38,7 +38,7 @@ modalContainer.innerHTML=`
               <label for="inputData3">Empresa u organización</label>
               <h6 class="opcional_contactos">(opcional)</h6>
             </div>
-            <input class="form-control form-control-sm">
+            <input class="form-control form-control-sm"  name="comments">
           </div>
 
           <div>
@@ -47,7 +47,7 @@ modalContainer.innerHTML=`
                   <label for="inputData4">Mensaje</label>
                   <h6 style="color:#fd8237">*</h6>
                 </div>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" type="comments"></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" type="message"></textarea>
               </div>
           </div>
 
@@ -56,9 +56,9 @@ modalContainer.innerHTML=`
       <br>
       
       <div class="d-flex justify-content-center">
-          <button type="submit" class="btn-contacto" onclick="hizoClick()" >Enviar</button>       
+          <button type="submit" class="btn-contacto"  >Enviar</button>       
       </div>
-
+      <input type="hidden" name="_next" value="http://127.0.0.1:5502/confirmacion.html">
       <input type="hidden" name="_captcha" value="false">
       <br>
   </form>
