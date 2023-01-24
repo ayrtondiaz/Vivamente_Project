@@ -17,6 +17,9 @@ poppins regular, italic y extraligth */
 .f-reg{
     font-weight:400;
 }
+.f-reg2{
+    font-weight:500;
+}
 .f-bold{
     font-weight:700;
 }
@@ -130,11 +133,16 @@ h1{
 
 /* fBORAR */
 .btn-colab{
-    background-color:#83d4aa;
+    background-color:#98cdbc;
     color:white;
-    font-size: larger;
-    padding: 20px;
-    border-radius: 30px;
+    font-size: x-large;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+.btn-colab:hover{
+    color:#1d4731;
 }
 
 footer {
@@ -149,6 +157,16 @@ footer {
 
 .footer_text{
     min-width:200px;
+    font-size:12px;
+    text-align: start;
+}
+.end-ico{
+    text-align: end;
+}
+.medio{
+    padding-top: 5px;
+    align-content: center;
+    align-items: center;
 }
 /* SECCION4-PRODUCTOS */
 .productos{
@@ -159,31 +177,30 @@ footer {
 .contenedor-prod{
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .btn-quiero{
     background-color:#98cdbc;
-    right: 100px;
-    left: 100px;
-    padding-left: 200px;
     color:white;
-    font-size: 25px;
-    padding: 15px;
-    border-radius: 20px;
+    font-size: x-large;
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 15px;    
     transition: 0.5s;
 
 }
 .btn-quiero:hover{
     background-color:#98cdbc;
-    right: 100px;
-    left: 100px;
-    padding-left: 200px;
-    color:black;
-    font-size: 25px;
-    padding: 15px;
-    border-radius: 20px;
+    color:white;
+    font-size: x-large;
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 15px;
+    font-size: xx-large;
 
 }
 .pos{
@@ -209,7 +226,19 @@ footer {
     background-color: white;
     color: black;
 }
+.start{
+    justify-content: start;
+}
+.card-des2{
+    display: flex;
+    justify-content: end;
+    transition: all 0.5s;
+    width: 100%;
+    height: auto;
+}
 .card-des{
+    display: flex;
+    justify-content: end;
     transition: all 0.5s;
     width: 90%;
     height: auto;
@@ -285,10 +314,11 @@ footer {
 .btn-contacto {
     background-color:#fd8237;
     color:white;
-    font-size: larger;
-    padding: 10px 30px 10px 30px;
-    border-radius: 15px;
-    border:none;
+    font-size:medium;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 20px;
 }
 
 .opcional_contactos {
@@ -534,13 +564,17 @@ footer {
 }
 /* SECCION */
 .btn-part{
-
         background-color:#fd8237;
         color:white;
-        font-size: larger;
-        padding: 20px;
-        border-radius: 30px;
+        font-size: x-large;
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 15px;
     }
+.btn-part:hover{
+    color: #000000;
+}
 .talleres{
     padding: 60px;
     margin-top: 100px;
@@ -558,7 +592,7 @@ footer {
 }
 .slider {
     z-index: 0 !important;
-    width: 75vw;
+    width: 95vw;
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -574,11 +608,13 @@ footer {
 }
 
 .slider .slide {
-    width: 200px;
+    width: 400px;
+    
 }
 
 .slider .slide img {
     width: 100%;
+    margin: 10px;
 }
 
 @keyframes scroll {

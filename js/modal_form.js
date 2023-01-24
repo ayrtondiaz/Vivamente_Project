@@ -1,14 +1,18 @@
 const modalContainer = document.getElementById('modal-form')
 modalContainer.innerHTML=`
 <section class="modal4 m4" >
-<div class="modal_container-form row text-center">
+<div class="modal_container-form row ">
   <div class="col-10">
   <section class="escribinos">
     <form action="https://formsubmit.co/xxxx@gmail.com" method="POST" enctype="multipart/form" id="form"> 
       <fieldset>
-          <legend class="f-bold" style="color: #1d4731;">Quiero participar</legend>
+      <div class="row">
+      <div class="justify-content-start" >
+      <legend class="f-bold" style="color: #1d4731;">Quiero participar</legend>      
+      <h5 class="f-reg pt-2 pb-4">A la breve nos pondremos en contacto contigo.</h5>
+      </div>
+      </div>
 
-          <h5 class="f-reg pt-2 pb-4">a la breve nos pondremos en contacto contigo.</h5>
           <div class="form-group mx-sm-3 mx-lg-0 mb-2">
             <div class="d-flex">
               <label for="inputData1">Nombre y Apellido</label>
@@ -56,7 +60,7 @@ modalContainer.innerHTML=`
       <br>
       
       <div class="d-flex justify-content-center">
-          <button type="submit" class="btn-contacto"  >Enviar</button>       
+          <button type="submit" class="btn-contacto btn"  >Enviar</button>       
       </div>
       <input type="hidden" name="_next" value="http://127.0.0.1:5502/confirmacion.html">
       <input type="hidden" name="_captcha" value="false">
@@ -65,7 +69,7 @@ modalContainer.innerHTML=`
 
   </section>
   </div>
-  <div class=" btn-cerrar ">
+  <div class=" btn-cerrar text-center">
     <a href="#" class="modal__close__form"><b>
     <span style="color:black"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
