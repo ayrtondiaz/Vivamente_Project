@@ -285,7 +285,6 @@ footer {
     max-width: 600px;
     transform: var(--transform);
     transition:var(--transition);
-    z-index: 9999;
 }
 
 /* MODAL-CONTACTO */
@@ -500,6 +499,7 @@ footer {
 
 }
  .modal--show{
+    z-index: 9999;
     opacity: 1;
     pointer-events: unset;
     transition: opacity .6s;
