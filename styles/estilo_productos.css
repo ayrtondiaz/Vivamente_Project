@@ -84,6 +84,16 @@ footer {
     justify-content: space-evenly;
 }
 
+.btn-quiero3 {
+    background-color:#fd8237;
+    color:white;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    min-width:50%;
+}
+
 /* PRODUCTOS */
 .contenedor-productos{
     display: flex;
@@ -103,17 +113,6 @@ footer {
     -webkit-box-shadow: 8px 8px 18px 1px rgba(142,140,140,0.26);
 }
 
-.btn-quiero2{
-    background-color:#fd8237;
-    right: 100px;
-    left: 100px;
-    padding-left: 200px;
-    color:white;
-    font-size: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    transition: 0.5s;
-}
 .img-card{
     width:80%;
 }
@@ -124,5 +123,12 @@ footer {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+
+
+.btn_opc {
+    font-size:15px;
+}
+
 
 /* MODAL */
