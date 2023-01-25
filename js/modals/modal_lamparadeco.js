@@ -30,7 +30,7 @@ contenedorModal4.innerHTML=`
 
 <div class="btn-category pb-1 p-0 col-12 cl-lg-12 d-flex d-lg-inline-block flex-wrap d-justify-evenly">
     <button class="btn btn-light btn_opc col-5 first_button my-2" id="mediano4" onclick="ChangeSize4('mediano'), getPrice4()">Mediano</button>
-    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 my-2 id="grande4" onclick="ChangeSize4('grande'), getPrice4()">Grande</button>
+    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 my-2" id="grande4" onclick="ChangeSize4('grande'), getPrice4()">Grande</button>
 </div>
 
 <div class="btn-category pb-1 p-0 col-12 cl-lg-12 d-flex d-lg-inline-block flex-wrap d-justify-evenly">
