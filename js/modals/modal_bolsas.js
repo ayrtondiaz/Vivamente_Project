@@ -19,7 +19,7 @@ contenedorModal11.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Bolsas elaboradas a partir de bolsas de papas, su confecciòn es realizada por una ONG y un micro-emprendimiento de costura.</p>
+<p class="p-sm-3 p-lg-0 col-10 col-lg-11 " align="justify">Bolsas elaboradas a partir de bolsas de papas, su confección es realizada por una ONG y un micro-emprendimiento de costura.</p>
 <img src="../assets/img/productos/productos/bolsas.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
     <p class="col-12"><em>* Venta al por mayor a partir de 20 piezas</em></p>
@@ -50,21 +50,18 @@ const modal11 = document.querySelector('.m11');
 const closeModal11 = document.querySelector('.mc11');
 const num11= document.getElementById("num11")
 openModal11.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal11.classList.add('modal--show');
 });
 
 closeModal11.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal11.classList.remove('modal--show');
 });
 
 function Add11(){
     counter11++;
     num11.innerHTML=`${counter11}`
-    console.log(counter11)
 }
 function Substract11(){
     if (counter11 >  0 ){

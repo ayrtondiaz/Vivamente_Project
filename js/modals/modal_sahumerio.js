@@ -17,7 +17,7 @@ contenedorModal2.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Portasahumerios realizado con yerba mate reciclada. Su diseño alargado permite que las cenizas queden sobre el objeto</p>
+<p class="p-sm-3 p-lg-0 col-10 col-lg-11  " align="justify">Portasahumerios realizado con yerba mate reciclada. Su diseño alargado permite que las cenizas queden sobre el objeto</p>
 <img src="../assets/img/productos/productos/portasahumerio.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
 <p class="col-12"><em>* Venta al por mayor a partir de 20 piezas</em></p>
@@ -50,14 +50,12 @@ const closeModal2 = document.querySelector('.mc2');
 num2= document.getElementById("num2")
 
 openModal2.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal2.classList.add('modal--show');
 });
 
 closeModal2.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal2.classList.remove('modal--show');
 });
 

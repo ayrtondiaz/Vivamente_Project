@@ -3,7 +3,7 @@ const modalA = document.querySelector('.mA');
 const closeModalA = document.querySelector('.mcA');
 
 openModalA.addEventListener('click', (e)=>{
-    console.log('funcionas')
+
     e.preventDefault();
     modalA.classList.add('modal--show');
 });
@@ -19,7 +19,7 @@ const modalB = document.querySelector('.mB');
 const closeModalB = document.querySelector('.mcB');
 
 openModalB.addEventListener('click', (e)=>{
-    console.log('funcionas')
+
     e.preventDefault();
     modalB.classList.add('modal--show');
 });

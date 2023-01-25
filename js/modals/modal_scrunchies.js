@@ -18,7 +18,7 @@ contenedorModal10.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Accesorio realizado a partir de descarte textil, diseñadas de manera clásica y adaptable a todo tipo de cabello. Variedades a elección.</p>
+<p class="p-sm-3 p-lg-0 col-10 col-lg-11  " align="justify">Accesorio realizado a partir de descarte textil, diseñadas de manera clásica y adaptable a todo tipo de cabello. Variedades a elección.</p>
 <img src="../assets/img/productos/productos/scrunchie.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
 <p class="col-12"><em>* Venta al por mayor a partir de 20 piezas</em></p>
@@ -49,21 +49,18 @@ const modal10 = document.querySelector('.m10');
 const closeModal10 = document.querySelector('.mc10');
 const num10= document.getElementById("num10")
 openModal10.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal10.classList.add('modal--show');
 });
 
 closeModal10.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal10.classList.remove('modal--show');
 });
 
 function Add10(){
     counter10++;
     num10.innerHTML=`${counter10}`
-    console.log(counter10)
 }
 function Substract10(){
     if (counter10 >  0 ){

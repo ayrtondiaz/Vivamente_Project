@@ -21,14 +21,14 @@ contenedorModal8.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Velas a base de cera de soja, con menor impacto ambiental que las convencionales, realizadas en frascos de vidrios reutilizados.</p>
+<p class="p-sm-3 p-lg-0 col-12 col-lg-11  " align="justify">Velas a base de cera de soja, con menor impacto ambiental que las convencionales, realizadas en frascos de vidrios reutilizados.</p>
 <img src="../assets/img/productos/productos/vela.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
 <p class="col-12"><em>* Venta al por mayor a partir de 20 piezas</em></p>
 </div>
 <div class="btn-category pb-1 p-0 col-12 cl-lg-12 d-flex d-lg-inline-block flex-wrap d-justify-evenly">
-    <button class="btn btn-light btn_opc col-5 first_button" id="180" onclick="ChangeSize8('180cc')">180 cc</button>
-    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 m-1" id="400" onclick="ChangeSize8('400cc')">400 cc</button>
+    <button class="btn btn-light btn_opc col-5 first_button my-2" id="180" onclick="ChangeSize8('180cc')">180 cc</button>
+    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 my-2" id="400" onclick="ChangeSize8('400cc')">400 cc</button>
 </div>
 <div class="text-center col-11 my-3"> 
     <div class="may-men p-0 p-lg-2 d-flex justify-content-evenly">
@@ -55,21 +55,18 @@ const modal8 = document.querySelector('.m8');
 const closeModal8 = document.querySelector('.mc8');
 const num8= document.getElementById("num8")
 openModal8.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal8.classList.add('modal--show');
 });
 
 closeModal8.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal8.classList.remove('modal--show');
 });
 
 function Add8(){
     counter8++;
     num8.innerHTML=`${counter8}`
-    console.log(counter8)
 }
 function Substract8(){
     if (counter8 >  0 ){

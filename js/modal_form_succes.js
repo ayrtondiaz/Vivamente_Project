@@ -42,14 +42,12 @@ const closeFormE = document.querySelector('.modal__close__e');
 // }
 
 openFormE.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modalFormE.classList.add('modal--show');
 });
 
 closeFormE.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modalFormE.classList.remove('modal--show');
 });
 

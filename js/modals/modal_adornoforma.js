@@ -19,15 +19,15 @@ contenedorModal5.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Formas diversas y simples para decorar tu espacio. Realizadas a partir de yerba mate reciclada. Producto 100% artesanales.</p>
+<p class="p-sm-3 p-lg-0 col-10 col-lg-11 " align="justify">Formas diversas y simples para decorar tu espacio. Realizadas a partir de yerba mate reciclada. Producto 100% artesanales.</p>
 <img src="../assets/img/productos/productos/adornos.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
     <p class="col-12"><em>* Venta al por mayor a partir de 20 piezas</em></p>
 </div>
 <div class="btn-category pb-1 p-0 col-12 cl-lg-12 d-flex d-lg-inline-block flex-wrap d-justify-evenly">
-    <button class="btn btn-light btn_opc col-5 first_button" id="circulo5" onclick="ChangeForm5('circulo')">Circulo</button>
-    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 m-1" id="corazon5" onclick="ChangeForm5('corazon')">Corazon</button>
-    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 m-1" id="estrella5" onclick="ChangeForm5('estrella')">Estrella</button>
+    <button class="btn btn-light btn_opc col-5 first_button my-2" id="circulo5" onclick="ChangeForm5('circulo')">Circulo</button>
+    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 my-2" id="corazon5" onclick="ChangeForm5('corazon')">Corazon</button>
+    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 my-2" id="estrella5" onclick="ChangeForm5('estrella')">Estrella</button>
 </div>
 
 <div class="text-center col-11 my-3"> 
@@ -55,20 +55,17 @@ modal5 = document.querySelector('.m5');
 closeModal5 = document.querySelector('.mc5');
 num5= document.getElementById("num5")
 openModal5.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal5.classList.add('modal--show');
 });
 
 closeModal5.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal5.classList.remove('modal--show');
 });
 
 function ChangeForm5(form) {
     forma5 = form;
-    console.log(form)
     switch(form) {
         case 'circulo':
             document.getElementById('circulo5').classList.add('pressedButton');
@@ -94,7 +91,6 @@ function ChangeForm5(form) {
 function Add5(){
     counter5++;
     num5.innerHTML=`${counter5}`
-    console.log(counter5)
 }
 function Substract5(){
     if (counter5 >  0 ){

@@ -10,7 +10,7 @@ contenedorModal9.innerHTML=`
     <p class="d-none d-lg-flex font-italic disclaimer col-11 p-2 py-0"><em>* Venta al por mayor a partir de 20 piezas</em></p>
     <p class=" d-none d-lg-flex col-11 py-0" style="font-size:10px;"><p class="d-none d-lg-flex col-11 pb-0" style="font-size:10px;"><b>Sugerencias de uso:</b></h5>
     <p class="d-none d-lg-flex col-11 py-0" style="font-size:10px;">Apoya maceta / celular.</p>
-    <p class="d-none d-lg-flex col-11 py-0" style="font-size:10px;">Contenedor de artíuclos de librería y objetos pequeños.</p>
+    <p class="d-none d-lg-flex col-11 py-0" style="font-size:10px;">Contenedor de artículos de librería y objetos pequeños.</p>
     <p class="d-none d-lg-flex col-11 py-0" style="font-size:10px;">Sujeta llave, pañuelo o barbijo.</p>
 </div>
 <div class="p-3 col-12 col-lg-7 d-flex flex-wrap align-items-center">
@@ -22,13 +22,13 @@ contenedorModal9.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Objeto diseñado especificamente a partir de reducción de materiales, pero a su vez, con múltples usos.</p>
+<p class="p-sm-3 p-lg-0 col-10 col-lg-11  " align="justify">Objeto diseñado especificamente a partir de reducción de materiales, pero a su vez, con múltples usos.</p>
 <img src="../assets/img/productos/productos/organizador.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex  flex-wrap d-lg-none justify-content-center">
     <p class="col-12"><em>* Venta al por mayor a partir de 20 piezas</em></p>
     <p class="col-12"><b>Sugerencias de uso:</b></h5>
     <p class="col-12"><li>Apoya maceta / celular.</li></p>
-    <p class="col-12"><li>Contenedor de artíuclos de librería y objetos pequeños.</li></p>
+    <p class="col-12"><li>Contenedor de artículos de librería y objetos pequeños.</li></p>
     <p class="col-12"><li>Sujeta llave, pañuelo o barbijo.</li></p>
 </div>
 
@@ -59,21 +59,18 @@ const modal9 = document.querySelector('.m9');
 const closeModal9 = document.querySelector('.mc9');
 const num9= document.getElementById("num9")
 openModal9.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal9.classList.add('modal--show');
 });
 
 closeModal9.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal9.classList.remove('modal--show');
 });
 
 function Add9(){
     counter9++;
     num9.innerHTML=`${counter9}`
-    console.log(counter9)
 }
 function Substract9(){
     if (counter9 >  0 ){

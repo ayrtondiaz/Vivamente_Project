@@ -53,7 +53,6 @@ modal1.innerHTML +=
 
 function ChangeSize1(size) {
     tamaño1 = size;
-    console.log(tamaño1);
 }
 
 function Add1(){

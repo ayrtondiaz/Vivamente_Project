@@ -12,9 +12,9 @@ contenedorModal6.innerHTML=`
     <img src="../assets/img/productos/productos/lapiz.webp" class="d-none d-lg-inline-flex p-2 pt-0 col-11 img-modal mt-2">
     <p class="d-none d-lg-flex font-italic disclaimer col-11 p-2 py-0"><em>* Venta al por mayor a partir de 20 piezas</em></p>
     <p class=" d-none d-lg-flex col-11 pb-0" style="font-size:10px;"><b>Personaliza tus lápices:</b></p>
-    <p class="d-none d-lg-flex col-11 pb-0" style="font-size:10px;">Forrado $170 (Se deben solicitar con 7 dias de anticipación)</p>
-    <p class="d-none d-lg-flex col-11 pb-0" style="font-size:10px;">Grabado $190 (Se deben solicitar con 15 dias de anticipación)></p>
-    <p class="d-none d-lg-flex col-11 pb-0" style="font-size:10px;">Con blisters/señalador $250 (Se deben solicitar con 7 dias de anticipación)</p>
+    <p class="d-none d-lg-flex col-11 pb-0" style="font-size:10px;">- Forrado $170 (Se deben solicitar con 7 dias de anticipación)</p>
+    <p class="d-none d-lg-flex col-11 pb-0" style="font-size:10px;">- Grabado $190 (Se deben solicitar con 15 dias de anticipación)></p>
+    <p class="d-none d-lg-flex col-11 pb-0" style="font-size:10px;">- Con blisters/señalador $250 (Se deben solicitar con 7 dias de anticipación)</p>
 </div>
 <div class="p-3 col-12 col-lg-7 d-flex flex-wrap align-items-center">
 <div class="d-flex flex-row justify-self-end col-12">
@@ -25,18 +25,18 @@ contenedorModal6.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Lápices de escribir, con grafito, realizado en madera natural o papel de diario. Contiene cápsula biodegradable con semillas.</p>
+<p class="p-sm-3 p-lg-0 col-10 col-lg-11  " align="justify">Lápices de escribir, con grafito, realizado en madera natural o papel de diario. Contiene cápsula biodegradable con semillas.</p>
 <img src="../assets/img/productos/productos/lapiz.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex  flex-wrap d-lg-none justify-content-center">
     <p class="col-12"><em>* Venta al por mayor a partir de 20 piezas</em></p>
-    <h5 class="col-12"><b>Personaliza tus lápices:</b></h5>
-    <h6 class="col-12">Forrado $170 (Se deben solicitar con 7 dias de anticipación)</h6>
-    <h6 class="col-12">Grabado $190 (Se deben solicitar con 15 dias de anticipación)</h6>
-    <h6 class="col-12">Con blisters/señalador $250 (Se deben solicitar con 7 dias de anticipación)</h6>
+    <p class="col-12"><b>Personaliza tus lápices:</b></h5>
+    <p class="col-12">- Forrado $170 (Se deben solicitar con 7 dias de anticipación)</p>
+    <p class="col-12">- Grabado $190 (Se deben solicitar con 15 dias de anticipación)</p>
+    <p class="col-12">- Con blisters/señalador $250 (Se deben solicitar con 7 dias de anticipación)</p>
 </div>
 <div class="btn-category pb-1 p-0 col-12 cl-lg-12 d-flex d-lg-inline-block flex-wrap d-justify-evenly">
     <button class="btn btn-light btn_opc col-5 first_button" style="width:30%;" id="madera6" onclick="ChangeType6('madera natural')">Madera natural</button>
-    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2" style="width:30%;" id="papel6" onclick="ChangeType6('papel de diario')">Papel diario</button>
+    <button class="btn btn-light btn_opc col-5 d-inline-block  m-lg-2" style="width:30%;" id="papel6" onclick="ChangeType6('papel de diario')">Papel diario</button>
 </div>
 
 <div class="text-center col-11 my-3"> 
@@ -64,21 +64,18 @@ const modal6 = document.querySelector('.m6');
 const closeModal6 = document.querySelector('.mc6');
 const num6= document.getElementById("num6")
 openModal6.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal6.classList.add('modal--show');
 });
 
 closeModal6.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal6.classList.remove('modal--show');
 });
 
 function Add6(){
     counter6++;
     num6.innerHTML=`${counter6}`
-    console.log(counter6)
 }
 function Substract6(){
     if (counter6 >  0 ){

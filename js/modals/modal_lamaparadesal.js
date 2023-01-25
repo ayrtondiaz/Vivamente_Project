@@ -22,15 +22,15 @@ contenedorModal3.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Lámparas sustentables realizadas a partir de yerba mate reciclada y sal de Himalaya, ideal para decorar tu espacio de recreación.</p>
+<p class="p-sm-3 p-lg-0 col-10 col-lg-11  " align="justify">Lámparas sustentables realizadas a partir de yerba mate reciclada y sal de Himalaya, ideal para decorar tu espacio de recreación.</p>
 <img src="../assets/img/productos/productos/lamparadesal.webp" class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
 <p class="col-12">* Venta al por mayor a partir de 20 piezas</p>
 </div>
 
 <div class="btn-category pb-1 p-0 col-12 cl-lg-12 d-flex d-lg-inline-block flex-wrap d-justify-evenly">
-    <button class="btn btn-light btn_opc col-5 first_button" id="mediano3" onclick="ChangeSize3('mediano'), getPrice3()">Mediano</button>
-    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 m-1" id="grande3" onclick="ChangeSize3('grande'), getPrice3()">Grande</button>
+    <button class="btn btn-light btn_opc col-5 first_button my-2" id="mediano3" onclick="ChangeSize3('mediano'), getPrice3()">Mediano</button>
+    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 my-2" id="grande3" onclick="ChangeSize3('grande'), getPrice3()">Grande</button>
 </div>
 
 <div class="text-center col-11 my-3"> 
@@ -60,14 +60,12 @@ const closeModal3= document.querySelector('.mc3');
 num3= document.getElementById("num3")
 
 openModal3.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal3.classList.add('modal--show');
 });
 
 closeModal3.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal3.classList.remove('modal--show');
 });
 

@@ -22,20 +22,20 @@ contenedorModal4.innerHTML=`
   </svg></span>
     </b></a>
 </div>
-<p class="p-sm-3 p-lg-0 col-10 " align="justify">Lámparas de yerba mate reciclada,ideales para ambientar tu espacio favorito de recreaciòn o estudio.</p>
+<p class="p-sm-3 p-lg-0 col-10 col-lg-11  " align="justify">Lámparas de yerba mate reciclada, ideales para ambientar tu espacio favorito de recreaciòn o estudio.</p>
 <img src="../assets/img/productos/productos/lampara.webp"  class="col-12 d-flex p-3 d-lg-none align-self-center  img-modal">
 <div class="col-11 d-flex d-lg-none justify-content-center">
     <p class="col-12"><em>* Venta al por mayor a partir de 20 piezas</em></p>
 </div>
 
 <div class="btn-category pb-1 p-0 col-12 cl-lg-12 d-flex d-lg-inline-block flex-wrap d-justify-evenly">
-    <button class="btn btn-light btn_opc col-5 first_button" id="mediano4" onclick="ChangeSize4('mediano'), getPrice4()">Mediano</button>
-    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 m-1" id="grande4" onclick="ChangeSize4('grande'), getPrice4()">Grande</button>
+    <button class="btn btn-light btn_opc col-5 first_button my-2" id="mediano4" onclick="ChangeSize4('mediano'), getPrice4()">Mediano</button>
+    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 my-2 id="grande4" onclick="ChangeSize4('grande'), getPrice4()">Grande</button>
 </div>
 
 <div class="btn-category pb-1 p-0 col-12 cl-lg-12 d-flex d-lg-inline-block flex-wrap d-justify-evenly">
-    <button class="btn btn-light btn_opc col-5 first_button"  id="LED" onclick="ChangeFoco4('LED'), getPrice4()">Foco LED</button>
-    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 m-1" id="foco_deco" onclick="ChangeFoco4('deco'), getPrice4()">Foco Deco</button>
+    <button class="btn btn-light btn_opc col-5 first_button my-2"  id="LED" onclick="ChangeFoco4('LED'), getPrice4()">Foco LED</button>
+    <button class="btn btn-light btn_opc col-5 d-inline-block m-lg-2 my-2" id="foco_deco" onclick="ChangeFoco4('deco'), getPrice4()">Foco Deco</button>
 </div>
 
 <div class="text-center col-11 my-3"> 
@@ -64,21 +64,18 @@ const closeModal4 = document.querySelector('.mc4');
 const num4= document.getElementById("num4")
 
 openModal4.addEventListener('click', (e)=>{
-    console.log('funcionas')
     e.preventDefault();
     modal4.classList.add('modal--show');
 });
 
 closeModal4.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log('cerrar')
     modal4.classList.remove('modal--show');
 });
 
 function Add4(){
     counter4++;
     num4.innerHTML=`${counter4}`
-    console.log(counter4)
 }
 
 function Substract4(){
@@ -116,7 +113,6 @@ function ChangeFoco4(foco) {
 function getPrice4() {
     switch (true) {
         case (tamaño4 === 'mediano' && foco4 === 'LED'):
-            console.log(tamaño4 + foco4);
             valorMenor4 = "$2200";
             valorMayor4 = "$900";
             valMay4.innerHTML = `${valorMayor4}`;
