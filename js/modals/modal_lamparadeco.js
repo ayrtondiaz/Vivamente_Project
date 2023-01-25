@@ -90,7 +90,7 @@ function Substract4(){
 }
 
 function ChangeSize4(size) {
-    tamaño4 = size;4    
+    tamaño4 = size;    
     if(tamaño4==='mediano') {
         document.getElementById('mediano4').classList.add('pressedButton');
         document.getElementById('grande4').classList.remove('pressedButton');
@@ -154,7 +154,7 @@ function getPrice4() {
 
 function Wpp4(){
     if(tamaño4 !== undefined && foco4 !== undefined && counter4 !== 0) {
-        const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter4}%20unidades%20de%20${nombreProd4}%20con%20foco%20${foco4} `;
+        const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter4}%20unidades%20de%20${nombreProd4}%20con%20foco%20${foco4} de tamaño ${tamaño4} `;
         window.open(URL, "_blank");
         document.getElementById('error4').classList.add("d-none");
         document.getElementById('error4').classList.remove("d-flex"); 

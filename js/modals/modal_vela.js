@@ -103,7 +103,7 @@ function ChangeSize8(size) {
 
 function Wpp8(){
     if(tamaño8 !== undefined && counter8!== 0) {
-        const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter8}%20unidades%20de%20${nombreProd8} `;
+        const URL = `https://api.whatsapp.com/send?phone=+5493534230690&text=Hola%20Vivamente!%20Quisiera%20encargarte%20${counter8}%20unidades%20de%20${nombreProd8} de ${tamaño8} `;
         window.open(URL, "_blank");
         document.getElementById('error8').classList.add("d-none");
         document.getElementById('error8').classList.remove("d-flex"); 

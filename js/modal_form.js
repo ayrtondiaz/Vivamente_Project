@@ -4,7 +4,7 @@ modalContainer.innerHTML=`
 <div class="modal_container-form row ">
   <div class="col-12">
   <section class="escribinos2">
-    <form action="https://formsubmit.co/xxxx@gmail.com" method="POST" enctype="multipart/form" id="form"> 
+    <form action="https://formsubmit.co/xxx@gmail.com" method="POST" enctype="multipart/form" id="form"> 
       <fieldset>
       <div class="justify-content-start d-flex flex-wrap" >
       <legend class="f-bold col-11 pt-5" style="color: #1d4731;">Quiero participar</legend>      
@@ -60,7 +60,7 @@ modalContainer.innerHTML=`
                   <label for="inputData4"><b>Mensaje</b></label>
                   <h6 style="color:#fd8237">*</h6>
                 </div>
-                  <textarea class="form-control" style="resize: none; font-size:12px;" id="exampleFormControlTextarea1" rows="2" type="message"></textarea>
+                  <textarea class="form-control" style="resize: none; font-size:12px;" id="exampleFormControlTextarea1" rows="2" name="message"></textarea>
               </div>
           </div>
 
